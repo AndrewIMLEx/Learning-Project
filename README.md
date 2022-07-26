@@ -39,13 +39,13 @@ Install Learning-Projects using npm
   cd my-project
 ```
 <!-- Installing dependencies using Yarn -->
-<h2>Installing dependencies<h2>
+<h2>Installing dependencies</h2>
 
 ```bash
   yarn install
 ```
 <!-- Technologies Used -->
-<h2>Technologies Used in the Project<h2>
+<h2>Technologies Used in the Project</h2>
 
 ```bash
   Yarn:For Dependency Management
