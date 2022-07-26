@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "The objective of the project is to practise configuring React from scratch for a number game",
   "main": "index.js",
+  "engines":{
+      "node": "16.16.0",
+      "npm":"8.12.1",
+      "Yarn":"1.22.19"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
