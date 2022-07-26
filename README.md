@@ -44,6 +44,19 @@ Install dependencies
 ```bash
   yarn install
 ```
+<!-- Technologies Used -->
+Technologies Used in the Project
+
+```bash
+  Yarn:For Dependency Management
+  Trello:For tracking and project management
+  Babel: to transpile JSX to JavaScript so that clients/browsers can compile/read the code
+  WebPack:Bundle codes, none-code assets such as images,fonts so as to minify,lazy-load,perform testing and Hot-Loading replacement
+  Heroku: A cloud platform used to configure and deploy projects
+  CI/CD tools
+  1.Circle CI 2.Hound CI 3.ESLINT
+```
 </p>
+
 
 
