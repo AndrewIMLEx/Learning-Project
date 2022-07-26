@@ -9,7 +9,8 @@
     "yarn": "1.22.19"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-dev": "webpack --mode development",
+    "build-prod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
