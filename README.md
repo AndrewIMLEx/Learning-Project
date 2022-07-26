@@ -9,12 +9,12 @@ Align main heading to the center of the page
 <div>
 <!-- Badges -->
 <p>
-##<h1> Description</h1>
+<h1> Description</h1>
 The Aim of the project is to learn how to configure a react project from scratch using Agile methodology,
 The steps of configuring the project are documented on Trello. Link:https://trello.com/b/XJQpSjSL/learning-project
 
 <!-- Installation -->
-### :gear:##<h1>Installation/<h1>
+### :gear:<h2>Installation</h2>
 
 Install Learning-Projects using npm
 
@@ -24,9 +24,9 @@ Install Learning-Projects using npm
   cd Learning-Project
 ```
 <!-- Run Locally -->
-### :running: Run Locally
+### :running:<h2> Run Locally</h2>
 
-Clone the project
+Clone the project from github
 
 ```bash
   git clone https://github.com/AndrewIndeche/Learning-Project.git
