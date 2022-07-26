@@ -24,12 +24,25 @@ Install Learning-Projects using npm
   cd Learning-Project
 ```
 <!-- Run Locally -->
-### :running:<h2> Run Locally</h2>
+### :running:<h2> Running Locally</h2>
 
+<!-- Cloning the project from Github -->
 Clone the project from github
 
 ```bash
   git clone https://github.com/AndrewIndeche/Learning-Project.git
+```
+<!-- Going into the project Directory/Folder -->
+Go to the project directory
+
+```bash
+  cd my-project
+```
+<!-- Installing dependencies using Yarn -->
+Install dependencies
+
+```bash
+  yarn install
 ```
 </p>
 
