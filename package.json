@@ -1,14 +1,14 @@
 {
-  "name": "learning_project",
+  "name": "learning-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "The objective of the project is to practise configuring React from scratch for a number game",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndrewIndeche/Learning-Project"
+    "url": "git+https://github.com/AndrewIndeche/Learning-Project.git"
   },
   "keywords": [],
   "author": "",
@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/AndrewIndeche/Learning-Project/issues"
   },
-  "homepage": "https://github.com/AndrewIndeche/Learning-Project#readme",
-  "dependencies": {
-    "webpack-cli": "^4.10.0"
-  }
+  "homepage": "https://github.com/AndrewIndeche/Learning-Project#readme"
 }
