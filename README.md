@@ -36,7 +36,7 @@ Install Learning-Projects using npm
 <h2>Go to the project directory</h2>
 
 ```bash
-  cd my-project
+  cd Learning_Project
 ```
 <!-- Installing dependencies using Yarn -->
 <h2>Installing dependencies</h2>
