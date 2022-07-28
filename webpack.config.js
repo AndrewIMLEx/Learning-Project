@@ -12,4 +12,4 @@ module.exports = {  //webpack will take source code from ./src folder and transp
     path: path.resolve(__dirname,'dist')
     },
 
-}
+};
