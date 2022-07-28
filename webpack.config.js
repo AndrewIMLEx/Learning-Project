@@ -10,13 +10,14 @@ module.exports = {  //webpack will take source code from ./src folder index.js a
 },
 output:{
 path: path.resolve(__dirname,'dist'),
-filename: 'bundle.js' //instructions to bundle the contents of index.js to bundle.js
-    },
-
-    module:{
-        rules:[
-        {
-        test:/.(js|jsx)$/,
-        exclude
-        }
-    };
+filename: 'bundle.js' //script to bundle the contents of index.js to bundle.js
+},
+module:{
+rules:[
+{
+test:/.(js|jsx)$/, //add webpack rule to configure js and jsx
+exclude:/node_modules/  //rule to exclude node_modules when bundling
+}
+]
+},
+};
