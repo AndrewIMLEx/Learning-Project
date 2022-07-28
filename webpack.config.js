@@ -13,4 +13,10 @@ path: path.resolve(__dirname,'dist'),
 filename: 'bundle.js' //instructions to bundle the contents of index.js to bundle.js
     },
 
-};
+    module:{
+        rules:[
+        {
+        test:/.(js|jsx)$/,
+        exclude
+        }
+    };
