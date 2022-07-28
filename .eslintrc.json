@@ -1,3 +1,4 @@
+//The .elintrc.json file has been generated using yarn run eslint --init
 {
     "env": {
         "browser": true,
@@ -9,7 +10,8 @@
     ],
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": true,
+            "js":true
         },
         "ecmaVersion": "latest",
         "sourceType": "module"
@@ -18,5 +20,6 @@
         "react"
     ],
     "rules": {
+        "semi" : ["error", "always"] //add rule to disallow accidental use of semi-colons
     }
 }
