@@ -40,13 +40,11 @@ Install Learning-Projects using npm
 ```
 <!-- Installing dependencies using Yarn -->
 <h2>Installing dependencies</h2>
-
 ```bash
   yarn install
 ```
 <!-- Technologies Used -->
 <h2>Technologies Used in the Project</h2>
-
 ```bash
   Yarn:For Dependency Management
   Trello:For tracking and project management
@@ -55,8 +53,7 @@ Install Learning-Projects using npm
   Heroku: A cloud platform used to configure and deploy projects
   CI/CD tools
   1.Circle CI 2.Hound CI 3.ESLINT
-```
-</p>
+```</p>
 
 
 
