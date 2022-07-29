@@ -1,5 +1,6 @@
 //configuration for webpack development server
 //The path function initializes the path module that will allow finding and interaction of file paths.
+const { dirname } = require("path");
 const path = require("path");
 //initialize webpack-merge module for merging production and development configurations.
 const {merge} = require("webpack-merge"); 
@@ -13,7 +14,12 @@ module.exports = merge(common,{
     },
     devServer:{
         static:{
-            directory:path.join(_dirname,"./dist")
+            directory:path.join(dirname,"./dist")
         },
     },
+    output:{
+      filename:'bundle.js',
+      path:path.resolve(__dirname,'dist'),
+      clean:true,
+    }
 });
