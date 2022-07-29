@@ -9,6 +9,7 @@
     "yarn": "1.22.19"
   },
   "scripts": {
+    "watch":"webpack --watch",
     "build-common":"webpack --mode common",
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production"
@@ -34,3 +35,4 @@
     "eslint-plugin-react": "^7.30.1"
   }
 }
+
