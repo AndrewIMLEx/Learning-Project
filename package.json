@@ -9,7 +9,6 @@
     "yarn": "1.22.19"
   },
   "scripts": {
-    "build-common":"webpack --mode common",
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production"
   },

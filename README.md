@@ -4,7 +4,7 @@ The Readme file documents the project description and installation and set up in
 <!--
 Align main heading to the center of the page
 -->
-<div align="right">
+<div align="center">
 <h1>React Configuration Learning Project</h1> The ReadME documents details about configuring a React Project from scratch 
 <div>
 <!-- Badges -->
