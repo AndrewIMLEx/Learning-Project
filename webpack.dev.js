@@ -3,5 +3,14 @@
 const path = require("path");
 //initialize webpack-merge module for merging production and development configurations.
 const {merge} = require("webpack-merge"); 
-//iitialize common webpack settings module for use by production and development settings
+//initialize common webpack settings module for use by production and development settings.
 const common = require("./webpack.config.js")
+//export module with merged/bundled common and development settings.
+module.exports = merge(common,{
+    mode:"development",//set webpack configuration to development mode
+    devServer:{
+        static:{
+            directory:path.join(_dirname,"./dist")
+        },
+    },
+});
