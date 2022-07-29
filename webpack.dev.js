@@ -12,6 +12,7 @@ module.exports = merge(common,{
     entry:{
         index:'./src/index.js' //Add index.js as the entry point of bundling
     },
+    devtool: 'inline-source-map',
     devServer:{
         static:{
             directory:path.join(dirname,"./dist")
