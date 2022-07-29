@@ -14,7 +14,7 @@
             "jsx": true,
             "js":true
         },
-        "ecmaVersion": "latest",
+        "ecmaVersion": 6,
         "sourceType": "module"
     },
     "plugins": [
