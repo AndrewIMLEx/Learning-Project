@@ -8,6 +8,9 @@ const common = require("./webpack.config.js")
 //export module with merged/bundled common and development settings.
 module.exports = merge(common,{
     mode:"development",//set webpack configuration to development mode
+    entry:{
+        index:'./src/index.js' //Add index.js as the entry point of bundling
+    },
     devServer:{
         static:{
             directory:path.join(_dirname,"./dist")
