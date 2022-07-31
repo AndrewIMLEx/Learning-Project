@@ -9,4 +9,6 @@ ReactDOM.render( //React.StrictMode checks for problems in it's descendant compo
     <React.StrictMode> 
     <App />
   </React.StrictMode>,
+  document.getElementById("learning") //the method will get an object matching the ID learning from index.html
+  //which will be rendered/displayed.
 );
