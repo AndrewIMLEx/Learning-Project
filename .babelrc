@@ -1,0 +1,2 @@
+//Add plugins to support React JSX language features 
+{ "presets":[["@babel/preset-react"]]}
