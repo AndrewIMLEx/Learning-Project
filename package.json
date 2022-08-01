@@ -13,8 +13,7 @@
     "build-common": "webpack --mode common",
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production",
-    "start": "webpack serve --mode development",
-    "start production": "webpack serve --mode production"
+    "start": "webpack serve --mode development"
   },
   "repository": {
     "type": "git",
