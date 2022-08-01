@@ -15,7 +15,8 @@ module.exports = merge(common,{
     devtool: 'inline-source-map',
     devServer:{
         static:{
-            directory:path.join(dirname,"./dist")
+            directory:path.join(dirname,"./dist"),
+            hot:true,
         },
     },
     output:{
@@ -31,7 +32,7 @@ module.exports = merge(common,{
         exclude:/node_modules/  //rule to exclude node_modules when bundling
         }
         ]
-        },
+     },  
 });
 
 
