@@ -22,7 +22,16 @@ module.exports = merge(common,{
       filename:'bundle.js',
       path:path.resolve(__dirname,'dist'),
       clean:true,
-    }
+    },
+    module:{
+        rules:[
+        {
+        test:/.(js|jsx)$/, //add webpack rule to configure js and jsx
+        use:'babel-loader',//configure babel to convert/transpile JSX code into a browser readable js format
+        exclude:/node_modules/  //rule to exclude node_modules when bundling
+        }
+        ]
+        },
 });
 
 
