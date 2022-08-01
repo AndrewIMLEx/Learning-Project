@@ -9,20 +9,20 @@ const common = require("./webpack.config.js");
 //export module with merged/bundled common and development settings.
 module.exports = merge(common,{
     mode:"development",//set webpack configuration to development mode
-    entry:{
-        index:'./src/index.js' //Add index.js as the entry point of bundling
-    },
+    entry:[
+        'react-hot-loader/patch',
+        './src/index.js' //Add index.js as the entry point of bundling
+    ],
     devtool: 'inline-source-map',
     devServer:{
-        static:{
-            directory:path.join(dirname,"./dist"),
-            hot:true,
+        'static':{
+            directory:'./dist',
+
         },
     },
     output:{
       filename:'bundle.js',
       path:path.resolve(__dirname,'dist'),
-      clean:true,
     },
     module:{
         rules:[
