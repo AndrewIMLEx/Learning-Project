@@ -6,4 +6,4 @@ const common = require("./webpack.config.js");
 //set webpack mode to production mode and export module for use by other modules
 module.exports = merge(common,{
     mode:'production'
-})
+});
