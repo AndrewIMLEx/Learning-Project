@@ -9,11 +9,9 @@
   },
   "scripts": {
     "clean": "rm dist/bundle.js",
-    "watch": "webpack --watch",
-    "build-common": "webpack --mode common",
-    "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production",
-    "start": "webpack serve --mode development"
+    "build-dev": "webpack --mode development",
+    "start": "webpack serve --mode production"
   },
   "repository": {
     "type": "git",
@@ -27,14 +25,15 @@
   },
   "homepage": "https://github.com/AndrewIndeche/Learning-Project#readme",
   "dependencies": {
-    "@babel/core": "^7.18.9",
-    "@babel/preset-env": "^7.18.9",
-    "latest": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-loader": "^4.13.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "html-webpack-plugin": "^5.5.0",
+    "latest": "^0.2.0",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^8.2.5",
     "babel-preset-env": "^1.7.0",
