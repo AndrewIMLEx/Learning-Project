@@ -11,7 +11,7 @@
     "clean": "rm dist/bundle.js",
     "build-prod": "webpack --mode production",
     "build-dev": "webpack --mode development",
-    "start": "webpack serve --mode production"
+    "start": "webpack serve --hot --mode development"
   },
   "repository": {
     "type": "git",
@@ -25,12 +25,13 @@
   },
   "homepage": "https://github.com/AndrewIndeche/Learning-Project#readme",
   "dependencies": {
+    "enzyme-adapter-react-16": "^1.15.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hot-loader": "^4.13.0"
+    "react-hot-loader": "^4.13.0",
+    "react-test-renderer": "^18.2.0"
   },
   "devDependencies": {
-    "@hot-loader/react-dom": "^17.0.2",
     "@babel/core": "^7.18.9",
     "@babel/preset-env": "^7.18.9",
     "@babel/preset-react": "^7.18.6",
