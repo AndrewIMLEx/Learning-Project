@@ -1,8 +1,5 @@
 #ignore dependency directory because of space and to ensure code base is clean.
 node_modules/
 
-#exclude dist folder to free up space  
-dist/
-
 #exclude yarn-error log
 yarn-error.log
