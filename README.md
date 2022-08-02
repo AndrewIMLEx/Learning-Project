@@ -12,6 +12,7 @@ Align main heading to the center of the page
 | React               | Component Web                  | [Hot Loading](#10); [Lazy Loading](#15); [Strict Mode](#22); [Error Boundary](#23); [propTypes](#24) |
 | NPM                 | Node                           | [Git Repo Info](#1); [Scripts](#11)                                                                  |
 | Test                | Test code                      | [Jest & Enzyme]                                                                     |
+
 <div align="left">
 <h1>React Configuration Learning Project</h1> The ReadME documents details about configuring a React Project from scratch 
 
@@ -62,7 +63,6 @@ Install Learning-Projects using npm
   CI/CD tools
   1.Circle CI 2.Hound CI 3.ESLINT
 ```</p>
-
 <div>
 
 
