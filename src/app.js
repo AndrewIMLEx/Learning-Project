@@ -5,6 +5,6 @@ const App = () => {//A JSX function made of Javascript and XML code using arrow 
     return <div>
     Hello World!
     </div>;
-    
     };
 export default App; //Used to export the App function to be used by other components
+
