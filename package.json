@@ -12,6 +12,7 @@
     "build-prod": "webpack --mode production",
     "build-dev": "webpack --mode development",
     "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "start": "webpack serve --hot --mode development"
   },
   "repository": {
@@ -26,14 +27,14 @@
   },
   "homepage": "https://github.com/AndrewIndeche/Learning-Project#readme",
   "dependencies": {
-    "enzyme-adapter-react-16": "^1.15.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hot-loader": "^4.13.0",
-    "react-test-renderer": "^18.2.0"
+    "react-hot-loader": "^4.13.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.9",
+    "react-test-renderer": "^18.2.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "@babel/preset-env": "^7.18.9",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^8.2.5",
