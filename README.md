@@ -60,7 +60,9 @@ bash
   <p>4.WebPack:Bundle codes, none-code assets such as images,fonts so as to minify,lazy-load,perform testing and Hot-Loading replacement</p>
   <p>5.Heroku: A cloud platform used to configure and deploy projects</p>
   <h2>CI/CD tools</h2>
-  1.Circle CI 2.Hound CI 3.ESLINT
+  <p>1.Circle CI</p> 
+  <p>2.Hound CI</p> 
+  <p>3.ESLINT</p>
 </p>
 <div>
 
