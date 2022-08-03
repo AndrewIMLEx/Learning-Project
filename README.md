@@ -25,8 +25,7 @@ The steps of configuring the project are documented on Trello. Link:https://trel
 <!-- Installation -->
 ### :gear:<h2>Installation</h2>
 
-Install Learning-Projects using npm
-
+Install Learning-Projects using Yarn
 
 ```bash
   yarn install Learning-Project
