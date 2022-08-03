@@ -53,7 +53,7 @@ Install Learning-Projects using Yarn
 ```
 <!-- Technologies Used -->
 <h2>Technologies Used in the Project</h2>
-```bash
+```bash<br>
   <p>Yarn:For Dependency Management</p>
   <p>Trello:For tracking and project management</p>
   <p>Babel: to transpile JSX to JavaScript so that clients/browsers can compile/read the code</p>
