@@ -54,7 +54,7 @@ Install Learning-Projects using Yarn
 <!-- Technologies Used -->
 <h2>Technologies Used in the Project</h2>
 ```bash<br>
-  <p>1.**Yarn:**For Dependency Management</p>
+  <p>1.Yarn:For Dependency Management</p>
   <p>2.Trello:For tracking and project management</p>
   <p>3.Babel: to transpile JSX to JavaScript so that clients/browsers can compile/read the code</p>
   <p>4.WebPack:Bundle codes, none-code assets such as images,fonts so as to minify,lazy-load,perform testing and Hot-Loading replacement</p>
