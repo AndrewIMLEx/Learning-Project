@@ -29,8 +29,8 @@ The steps of configuring the project are documented on Trello. Link:https://trel
 1.Install Learning-Projects using Yarn
 
 bash
-  1.yarn install Learning-Project
-  2.cd Learning-Project
+  <p>1.yarn install Learning-Project</p>
+  <p>2.cd Learning-Project</p>
   
 <!-- Run Locally -->
 ### :running:<h2> Running Locally</h2>
