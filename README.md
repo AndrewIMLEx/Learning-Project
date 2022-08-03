@@ -59,7 +59,7 @@ Install Learning-Projects using Yarn
   <p>3.Babel: to transpile JSX to JavaScript so that clients/browsers can compile/read the code</p>
   <p>4.WebPack:Bundle codes, none-code assets such as images,fonts so as to minify,lazy-load,perform testing and Hot-Loading replacement</p>
   <p>5.Heroku: A cloud platform used to configure and deploy projects</p>
-  CI/CD tools
+  <h2>CI/CD tools</h2>
   1.Circle CI 2.Hound CI 3.ESLINT
 ```</p>
 <div>
