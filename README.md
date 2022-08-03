@@ -54,11 +54,11 @@ Install Learning-Projects using Yarn
 <!-- Technologies Used -->
 <h2>Technologies Used in the Project</h2>
 ```bash
-  Yarn:For Dependency Management
-  Trello:For tracking and project management
-  Babel: to transpile JSX to JavaScript so that clients/browsers can compile/read the code
-  WebPack:Bundle codes, none-code assets such as images,fonts so as to minify,lazy-load,perform testing and Hot-Loading replacement
-  Heroku: A cloud platform used to configure and deploy projects
+  <p>Yarn:For Dependency Management</p>
+  <p>Trello:For tracking and project management</p>
+  <p>Babel: to transpile JSX to JavaScript so that clients/browsers can compile/read the code</p>
+  <p>WebPack:Bundle codes, none-code assets such as images,fonts so as to minify,lazy-load,perform testing and Hot-Loading replacement</p>
+  <p>Heroku: A cloud platform used to configure and deploy projects</p>
   CI/CD tools
   1.Circle CI 2.Hound CI 3.ESLINT
 ```</p>
