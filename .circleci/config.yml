@@ -17,12 +17,9 @@ workflows:
           # Relevant tags can be found on the CircleCI Developer Hub
           # https://circleci.com/developer/images/image/cimg/node
           version: '16.16.0'
+          #configure jest to carry out tests
+          test-results-for: jest 
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: yarn
-          # run installations
-      - run: yarn install
-          # run build actions
-      - run:  yarn build-prod
-          # run tests!
-      - run: yarn test
-          
+      
+  
