@@ -19,10 +19,4 @@ workflows:
           version: '16.16.0'
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: yarn
-          # run installations
-      - run: yarn install
-          # run build actions
-      - run:  yarn build-prod
-          # run tests!
-      - run: yarn test
           
