@@ -7,10 +7,12 @@ Align main heading to the center of the page
 | Tool                | Description                    | Branch                                                                                               |
 | ------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------- |
 | Git                 | Version Control                | [Repo](#1);                                                         |
-| Webpack             | Bundler                        | [Mode](#5); [Server](#6); [Debugger](#7); [Analyzer](#12); [Externalize](#13)                        |
+| Webpack             | Bundler                        | [Mode](#5); [Production](#6)
+|
 | Babel               | Transpiler                     | [React Class](#8); [Loader](#9); [Polyfill](#14)                                                     |
 | React               | Component Web                  | [Hot Loading](#10); [Lazy Loading](#15); [Strict Mode](#22); [Error Boundary](#23); [propTypes](#24) |
-| NPM                 | Node                           | [Git Repo Info](#1); [Scripts](#11)                                                                  |
+| Yarn                | Node                           | [Git Repo Info](#1); 
+|
 | Test                | Test code                      | [Jest & Enzyme]                                                                     |
 
 <div align="left">
