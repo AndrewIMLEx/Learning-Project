@@ -4,13 +4,13 @@ The Readme file documents the project description and installation and set up in
 <!--
 Align main heading to the center of the page
 -->
-| Tool                | Description                    | Branch                                                                                               |
+| Tool                | Description                    | Tags for tools used                                                                                               |
 | ------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| Git                 | Version Control                | [Repo](#1);                                                         |
-| Webpack             | Bundler                        | [Mode](#5); [Server](#6); [Debugger](#7); [Analyzer](#12); [Externalize](#13)                        |
-| Babel               | Transpiler                     | [React Class](#8); [Loader](#9); [Polyfill](#14)                                                     |
-| React               | Component Web                  | [Hot Loading](#10); [Lazy Loading](#15); [Strict Mode](#22); [Error Boundary](#23); [propTypes](#24) |
-| NPM                 | Node                           | [Git Repo Info](#1);                                                                  |
+| Git                 | Version Control                | [Repo];                                                         |
+| Webpack             | Bundler                        | [Mode]; [Production];                        |
+| Babel               | Transpiler                     | [React Class]; [Loader]; [Polyfill]                                                     |
+| React               | Component Web                  | [Hot Loading]; [Lazy Loading]; [Strict Mode]; |
+| NPM                 | Node                           | [Git Repo Info];                                                                  |
 | Test                | Test code                      | [Jest & Enzyme]                                                                     |
 
 
