@@ -6,12 +6,12 @@ Align main heading to the center of the page
 -->
 | Tool                | Description                    | Tags for tools used                                                                                               |
 | ------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| Git                 | Version Control                | [Repo];                                                         |
-| Webpack             | Bundler                        | [Mode]; [Production];                        |
-| Babel               | Transpiler                     | [React Class]; [Loader]; [Polyfill]                                                     |
-| React               | Component Web                  | [Hot Loading]; [Lazy Loading]; [Strict Mode]; |
-| NPM                 | Node                           | [Git Repo Info];                                                                  |
-| Test                | Test code                      | [Jest & Enzyme]                                                                     |
+| 1.Git                 | Version Control                | [Repo];                                                         |
+| 2.Webpack             | Bundler                        | [Mode]; [Production];                        |
+| 3.Babel               | Transpiler                     | [React Class]; [Loader]; [Polyfill]                                                     |
+| 4.React               | Component Web                  | [Hot Loading]; [Lazy Loading]; [Strict Mode]; |
+| 5.NPM                 | Node                           | [Git Repo Info];                                                                  |
+| 6.Test                | Test code                      | [Jest & Enzyme]                                                                     |
 
 
 <div align="left">
@@ -26,11 +26,11 @@ The steps of configuring the project are documented on Trello. Link:https://trel
 <!-- Installation -->
 ### :gear:<h2>Installation</h2>
 
-Install Learning-Projects using Yarn
+1.Install Learning-Projects using Yarn
 
 bash
-  yarn install Learning-Project
-  cd Learning-Project
+  1.yarn install Learning-Project
+  2.cd Learning-Project
   
 <!-- Run Locally -->
 ### :running:<h2> Running Locally</h2>
@@ -38,17 +38,17 @@ bash
 <!-- Cloning the project from Github -->
 <h2>Clone the project from github</h2>
 
-  git clone https://github.com/AndrewIndeche/Learning-Project.git
+  1.git clone https://github.com/AndrewIndeche/Learning-Project.git
 
 <!-- Going into the project Directory/Folder -->
 <h2>Go to the project directory</h2>
 
-  cd Learning_Project
+  1.cd Learning_Project
 
 <!-- Installing dependencies using Yarn -->
 <h2>Installing dependencies</h2>
 
-  yarn install
+  1.yarn install
 
 <!-- Technologies Used -->
   
