@@ -28,33 +28,32 @@ The steps of configuring the project are documented on Trello. Link:https://trel
 
 Install Learning-Projects using Yarn
 
-```bash
+bash
   yarn install Learning-Project
   cd Learning-Project
-```
+  
 <!-- Run Locally -->
 ### :running:<h2> Running Locally</h2>
 
 <!-- Cloning the project from Github -->
 <h2>Clone the project from github</h2>
 
-```bash
   git clone https://github.com/AndrewIndeche/Learning-Project.git
-```
+
 <!-- Going into the project Directory/Folder -->
 <h2>Go to the project directory</h2>
 
-```bash
   cd Learning_Project
-```
+
 <!-- Installing dependencies using Yarn -->
 <h2>Installing dependencies</h2>
-```bash
+
   yarn install
-```
+
 <!-- Technologies Used -->
+  
 <h2>Technologies Used in the Project</h2>
-```bash<br>
+<br>
   <p>1.Yarn:For Dependency Management</p>
   <p>2.Trello:For tracking and project management</p>
   <p>3.Babel: to transpile JSX to JavaScript so that clients/browsers can compile/read the code</p>
@@ -62,7 +61,7 @@ Install Learning-Projects using Yarn
   <p>5.Heroku: A cloud platform used to configure and deploy projects</p>
   <h2>CI/CD tools</h2>
   1.Circle CI 2.Hound CI 3.ESLINT
-```</p>
+</p>
 <div>
 
 
