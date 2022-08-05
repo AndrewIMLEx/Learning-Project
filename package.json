@@ -15,12 +15,9 @@
     "eject": "react-scripts eject",
     "start": "webpack serve --mode production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AndrewIndeche/Learning-Project.git"
-  },
+  "repository": "git+https://github.com/AndrewIndeche/Learning-Project.git",
   "keywords": [],
-  "author": "",
+  "author": "andrew <indecheandrew@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AndrewIndeche/Learning-Project/issues"
