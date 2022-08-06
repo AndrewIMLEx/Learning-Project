@@ -10,7 +10,7 @@ Align main heading to the center of the page
 | 2.Webpack             | Bundler                        | [Mode]; [Production];                        |
 | 3.Babel               | Transpiler                     | [React Class]; [Loader]; [Polyfill]                                                     |
 | 4.React               | Component Web                  | [Hot Loading]; [Lazy Loading]; [Strict Mode]; |
-| 5.Yarn                 | Node                           | [Git Repo Info];                                                                  |
+| 5.Yarn                 | Node                           | [Package ];                                                                  |
 | 6.Test                | Test code                      | [Jest Enzyme]                                                                     |
 
 
