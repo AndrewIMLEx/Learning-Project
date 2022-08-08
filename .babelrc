@@ -2,7 +2,7 @@
 //the latest javascript content if not supported by the current browser
 //Add plugins to support React JSX language features 
 //The regexx expression will transform jsx tx or other forms that is not in traditional
-{ "presets":[["@babel/preset-env"],"@babel/preset-react"]
+{ "presets":[["@babel/preset-env",{ "modules": false }],"@babel/preset-react"],"plugins": [ "react-hot-loader/babel" ]
   }
 
   

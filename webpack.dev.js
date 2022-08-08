@@ -7,13 +7,10 @@ const common = require("./webpack.config.js");
 //export module with merged/bundled common and development settings.
 module.exports = merge(common,{
     mode:"development",//set webpack configuration to development mode
-    devtool: 'inline-source-map',
     devServer:{
         'static':{
-            directory:'./dist',
-
+            hot:true
         },
     },  
 });
-
 
