@@ -18,11 +18,17 @@ filename: 'bundle.js', //script to bundle the contents of index.js to bundle.js
 module:{
 rules:[
 {
-    test: /\.css$/i,
-    use: ["style-loader","css-loader"], //configure css and its loader to work on webpack
-use:'babel-loader',//configure babel to convert/transpile JSX code into a browser readable js format
+test:/.(js|jsx)$/, //add webpack rule to configure js and jsx
+use:['babel-loader'],//configure babel to convert/transpile JSX code into a browser readable js format
 exclude: /node_modules/  //rule to exclude node_modules when bundling
-}
+},
+{
+    test: /\.css$/,
+    use: [ 
+        'style-loader',
+        'css-loader'
+    ]
+  },
 ]
 },
  devServer:{
