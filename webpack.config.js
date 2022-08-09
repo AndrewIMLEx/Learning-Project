@@ -21,8 +21,8 @@ rules:[
 test:/.(js|jsx)$/, //add webpack rule to configure js and jsx
 use:['babel-loader'],//configure babel to convert/transpile JSX code into a browser readable js format
 exclude: ['/node_modules/',
-'src/tests/']  //rule to exclude node_modules when bundling
-}, 
+'/tests']  //rule to exclude node_modules when bundling
+},  
 {
     test: /\.css$/,
     use: [ 
