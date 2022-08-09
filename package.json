@@ -3,6 +3,7 @@
   "version": "1.22.19",
   "description": "The objective of the project is to practise configuring React from scratch for a number game",
   "main": "index.js",
+  "type": "module",
   "engines": {
     "node": "16.16.0",
     "yarn": "1.22.19"
