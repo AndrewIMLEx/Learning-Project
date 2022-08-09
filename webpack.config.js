@@ -15,6 +15,11 @@ output:{
 path: path.resolve(__dirname,'dist'),
 filename: 'bundle.js', //script to bundle the contents of index.js to bundle.js
 },
+performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+},
 module:{
 rules:[
 {
