@@ -1,6 +1,6 @@
 {
   "name": "learning-project",
-  "version": "1.0.0",
+  "version": "1.22.19",
   "description": "The objective of the project is to practise configuring React from scratch for a number game",
   "main": "index.js",
   "engines": {
