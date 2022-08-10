@@ -1,3 +1,4 @@
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 // General webpack settings will be located on this file
 const webpack = require('webpack');
 //The path function initializes the path module that will allow finding and interaction of file paths.
@@ -27,8 +28,17 @@ test:/.(js|jsx)$/, //add webpack rule to configure js and jsx
 use:['babel-loader'],//configure babel to convert/transpile JSX code into a browser readable js format
 exclude: ['/node_modules/',
 '/tests']  //rule to exclude node_modules when bundling
-},  
+}, 
+
 {
+    test: /\.html$/,
+    use: [ 
+        {
+            loader: "html-loader"
+        }
+    ]
+  },
+  {
     test: /\.css$/,
     use: [ 
         'style-loader',
@@ -36,6 +46,7 @@ exclude: ['/node_modules/',
     ]
   },
 ]
+
 },
  devServer:{
         'static':{
@@ -43,4 +54,16 @@ exclude: ['/node_modules/',
         },
         hot:true
     },
+    
 };
+plugins: [
+
+    new HtmlWebPackPlugin({
+
+        template: "./src/index.html",
+
+        filename: "./index.html"
+
+    })
+
+]
