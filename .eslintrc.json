@@ -12,12 +12,12 @@
     ],
     "eslint.options": {
         "env":{
-            "es6":true
+            "esversion": 6
         },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true,
-            "js":true,
+            "js":true
         },
         "ecmaVersion": "6",
         "sourceType": "module"
