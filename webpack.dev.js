@@ -6,14 +6,21 @@ const {merge} = require("webpack-merge");
 const common = require("./webpack.config.js");
 //export module with merged/bundled common and development settings.
 module.exports = merge(common,{
+    devtool: "inline-source-map",
     mode:"development",//set webpack configuration to development mode
-    devtool: 'inline-source-map',
     devServer:{
         'static':{
-            directory:'./dist',
-
+            hot:true
         },
-    },  
+    }, 
+    module:{
+        rules:[
+        {
+        test:/.(js|jsx)$/, //add webpack rule to configure js and jsx
+        use:'babel-loader',//configure babel to convert/transpile JSX code into a browser readable js format
+        exclude: /node_modules/  //rule to exclude node_modules when bundling
+        }
+        ]
+        }, 
 });
-
 

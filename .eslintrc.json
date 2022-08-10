@@ -12,7 +12,7 @@
     ],
     "eslint.options": {
         "env":{
-            "es6":true
+            "esversion": 6
         },
     "parserOptions": {
         "ecmaFeatures": {
