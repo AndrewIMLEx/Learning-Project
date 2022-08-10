@@ -1,4 +1,5 @@
 // General webpack settings will be located on this file
+const webpack = require('webpack');
 //The path function initializes the path module that will allow finding and interaction of file paths.
 const path = require('path');
 
@@ -7,26 +8,39 @@ const path = require('path');
 
 module.exports = {  //webpack will take source code from ./src folder index.js and transpile it to bundle.js in the dist folder
     entry:[
+        'react-hot-loader/patch',
         './src/index.js' //Add index.js as the entry point of bundling
     ],
 output:{
 path: path.resolve(__dirname,'dist'),
 filename: 'bundle.js', //script to bundle the contents of index.js to bundle.js
-clean:true
+},
+performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
 },
 module:{
 rules:[
 {
 test:/.(js|jsx)$/, //add webpack rule to configure js and jsx
-use:'babel-loader',//configure babel to convert/transpile JSX code into a browser readable js format
-exclude: /node_modules/  //rule to exclude node_modules when bundling
-}
+use:['babel-loader'],//configure babel to convert/transpile JSX code into a browser readable js format
+exclude: ['/node_modules/',
+'/tests']  //rule to exclude node_modules when bundling
+},  
+{
+    test: /\.css$/,
+    use: [ 
+        'style-loader',
+        'css-loader'
+    ]
+  },
 ]
 },
  devServer:{
         'static':{
             directory:'./dist',
-
         },
+        hot:true
     },
 };
