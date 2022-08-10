@@ -12,7 +12,6 @@
     "build": "webpack --mode production",
     "build-dev": "webpack serve",
     "test": "jest",
-    "eject": "react-scripts eject",
     "start": "node server.js"
   },
   "repository": "git+https://github.com/AndrewIndeche/Learning-Project.git",
