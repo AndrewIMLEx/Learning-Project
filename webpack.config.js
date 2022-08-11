@@ -34,7 +34,18 @@ exclude: ['/node_modules/',
     test: /\.html$/,
     use: [ 
         {
-            loader: "html-loader"
+            loader: "html-loader",
+            plugins: [
+
+                new HtmlWebPackPlugin({
+            
+                    template: "./src/index.html",
+            
+                    filename: "./index.html"
+            
+                })
+            
+            ]
         }
     ]
   },
@@ -56,14 +67,3 @@ exclude: ['/node_modules/',
     },
     
 };
-plugins: [
-
-    new HtmlWebPackPlugin({
-
-        template: "./src/index.html",
-
-        filename: "./index.html"
-
-    })
-
-]
