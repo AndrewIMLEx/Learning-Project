@@ -1,3 +1,5 @@
+// server.js is a middleware that us used to configure a port and static directories
+//open http://127.0.0.1:6000/ after running yarn start to display website on client
 var path = require('path'); //Node.js module that is used to transform paths
 var express = require('express'); //Module that returns a function reference for express
 
