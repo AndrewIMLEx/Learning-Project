@@ -3,6 +3,17 @@
   "version": "1.22.19",
   "description": "The objective of the project is to practise configuring React from scratch for a number game",
   "main": "index.js",
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "src"
+    ]
+  },
   "engines": {
     "node": "16.16.0"
   },
@@ -22,6 +33,7 @@
   },
   "homepage": "https://github.com/AndrewIndeche/Learning-Project#readme",
   "dependencies": {
+    "enzyme-adapter-react-16": "^1.15.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "webpack": "^5.74.0"
