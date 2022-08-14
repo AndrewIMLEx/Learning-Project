@@ -1,4 +1,4 @@
-import App from './App.js'; //import App component for testing
+import App from './App'; //import App component for testing
 import Enzyme, { shallow } from 'enzyme'; //import shallow attribute for testing a component without children.
 import EnzymeAdapter from 'enzyme-adapter-react-16';// import enzyme adapter to abstract changes in react version.
 import React from 'react';//import react code from node_modules for use in the file
