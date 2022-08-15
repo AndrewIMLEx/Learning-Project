@@ -1,16 +1,12 @@
-//import React from 'react';//import react code from node_modules for use in the file
-//import App from './App'; //import App component for testing
-//import Enzyme, { shallow } from 'enzyme'; //import shallow attribute for testing a component without children.
-//import EnzymeAdapter from 'enzyme-adapter-react-16';// import enzyme adapter to abstract changes in react version.
-
-const React = require('react');
-const App = "./App";
-const Enzyme = require('enzyme');
-const EnzymeAdapter  = require('enzyme-adapter-react-16');
+const React = 'react';//import App component for testing
+const Enzyme = require('enzyme',{ shallow } );//import shallow attribute for testing a component without children.
+const EnzymeAdapter = require('enzyme-adapter-react-16');// import enzyme adapter to abstract changes in react version.
+const  App = require('./App');//import react code from node_modules for use in the file
 
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 
 test("renders without error", () => { 
-    const App = (<App/>);// shallow test whether App component renders without error
+    const wrapper = shallow(<App/>);// shallow test whether App component renders without error
+    expect(wrapper.find("[data-test='component-app']"));
  });
