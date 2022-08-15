@@ -1,4 +1,3 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
 // General webpack settings will be located on this file
 const webpack = require('webpack');
 //The path function initializes the path module that will allow finding and interaction of file paths.
@@ -9,7 +8,6 @@ const path = require('path');
 
 module.exports = {  //webpack will take source code from ./src folder index.js and transpile it to bundle.js in the dist folder
     entry:[
-        'react-hot-loader/patch',
         './src/index.js' //Add index.js as the entry point of bundling
     ],
 output:{
@@ -30,25 +28,6 @@ exclude: ['/node_modules/',
 '/tests']  //rule to exclude node_modules when bundling
 }, 
 
-{
-    test: /\.html$/,
-    use: [ 
-        {
-            loader: "html-loader",
-            plugins: [
-
-                new HtmlWebPackPlugin({
-            
-                    template: "./src/index.html",
-            
-                    filename: "./index.html"
-            
-                })
-            
-            ]
-        }
-    ]
-  },
   {
     test: /\.css$/,
     use: [ 
@@ -63,7 +42,6 @@ exclude: ['/node_modules/',
         'static':{
             directory:'./dist',
         },
-        hot:true
     },
     
 };
