@@ -4,3 +4,6 @@ node_modules/
 #exclude yarn-error log
 yarn-error.log
 
+#exclude yarn-error log
+dist/
+
