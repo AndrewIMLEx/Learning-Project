@@ -7,3 +7,4 @@ import App from "./App"; //imports the code from the App component
 
 var appNode = document.getElementById("learning"); //return element with  specified value
 ReactDOM.render(<App/>, appNode);
+
