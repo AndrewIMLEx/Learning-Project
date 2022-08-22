@@ -5,11 +5,10 @@ const  App = './App';//import react code from node_modules for use in the file
 const { shallow } =  require('enzyme');
 
 
-
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
-it('renders without crashing', () => {
-    shallow(<App />);
-   });
+it('renders without crashing', function () {
+        shallow(<App />);
+    });
   
-   
+  
