@@ -50,6 +50,25 @@ bash
 
   1.yarn install
 
+<!-- Running Tests on the Application -->
+<h2>Running Tests</h2>
+
+  1.Yarn run test
+
+<!-- Running the Application Development Mode -->
+<h2>Running Development Server</h2>
+
+  1.Yarn run dev
+
+<!-- Running the Application Production Mode -->
+<h2>Running Development Server</h2>
+
+  1.Yarn run start
+
+  2. open http://127.0.0.1:6000/ on browser to view website
+
+  (Edit port number if current port does not work)
+
 <!-- Technologies Used -->
   
 <h2>Technologies Used in the Project</h2>
