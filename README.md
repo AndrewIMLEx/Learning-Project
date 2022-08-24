@@ -26,10 +26,10 @@ The steps of configuring the project are documented on Trello. Link:https://trel
 <!-- Installation -->
 ### :gear:<h2>Installation</h2>
 
-1.Install Learning-Projects using Yarn
+1.Install Learning-Projects using Yarn Install
 
 bash
-  <p>1.yarn install Learning-Project</p>
+  <p>1.yarn install</p>
   <p>2.cd Learning-Project</p>
   
 <!-- Run Locally -->
@@ -38,7 +38,7 @@ bash
 <!-- Cloning the project from Github -->
 <h2>Clone the project from github</h2>
 
-  1.git clone https://github.com/AndrewIndeche/Learning-Project.git
+  1.git clone https://github.com/AndrewIMLEx/Learning-Project
 
 <!-- Going into the project Directory/Folder -->
 <h2>Go to the project directory</h2>
@@ -50,16 +50,6 @@ bash
 
   1.yarn install
 
-<!-- Running Tests on the Application -->
-<h2>Running Tests</h2>
-
-  1.Yarn run test
-
-<!-- Running the Application Development Mode -->
-<h2>Running Development Server</h2>
-
-  1.Yarn run dev
-
 <!-- Running the Application Production Mode -->
 <h2>Running Development Server</h2>
 
@@ -68,6 +58,27 @@ bash
   2. open http://127.0.0.1:8080/ on browser to view website
 
   (Edit port number if current port does not work)
+
+<!-- Running Tests on the Application -->
+<h2>Running Tests</h2>
+
+  1.Yarn run test
+
+<!-- Linting the Application -->
+<h2>Linting the App</h2>
+
+  1.Yarn run lint
+
+<!-- Running the Application Development Mode -->
+<h2>Running Development Server</h2>
+
+  1.Yarn run build-dev
+
+<!-- Running the Application Development Mode -->
+<h2>Cleaning a build</h2>
+
+  1.Yarn run clean
+
 
 <!-- Technologies Used -->
   
