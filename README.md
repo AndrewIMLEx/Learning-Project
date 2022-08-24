@@ -65,7 +65,7 @@ bash
 
   1.Yarn run start
 
-  2. open http://127.0.0.1:6000/ on browser to view website
+  2. open http://127.0.0.1:8080/ on browser to view website
 
   (Edit port number if current port does not work)
 
