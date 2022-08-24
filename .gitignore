@@ -7,3 +7,5 @@ yarn-error.log
 #exclude yarn-error log
 dist/
 
+#Ignore port infomation for confidentiality
+.env/
