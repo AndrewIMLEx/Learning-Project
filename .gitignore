@@ -1,5 +1,6 @@
 #ignore dependency directory because of space and to ensure code base is clean.
 node_modules/
+.vscode
 dist/
 .env
 
