@@ -27,9 +27,12 @@ module.exports = {  //webpack will take source code from ./src folder index.js a
       },
     ]
   },
-
+  devServer: {
+    allowedHosts:['.herokuapp.com'],
+  },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'Production',
       template: path.join(__dirname, 'src', 'index.html'),
     }),
   ],
