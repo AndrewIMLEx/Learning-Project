@@ -10,6 +10,7 @@
   "scripts": {
     "start": "webpack serve --config webpack.prod.js",
     "start-dev": "webpack serve --open --config  webpack.dev.js",
+    "heroku-prebuild": "yarn install --dev",
     "heroku-postbuild": "yarn run build",
     "lint": "eslint",
     "build": "webpack --mode production",
