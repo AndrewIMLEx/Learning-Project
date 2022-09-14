@@ -17,6 +17,6 @@ module.exports = merge(common, {
     devServer: {
         static: './dist',
         port: process.env.PORT,
-        hot: 'only',
+        hot: true,
     },
 });
