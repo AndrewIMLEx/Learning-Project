@@ -3,7 +3,6 @@
 const path = require("path");
 //initialize webpack-merge module for merging production and development configurations.
 const {merge} = require("webpack-merge"); 
-
 const dotenv = require('dotenv');
 // initialize the dotenv package and the process.env
 dotenv.config();
