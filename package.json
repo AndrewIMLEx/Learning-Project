@@ -7,6 +7,13 @@
     "node": "16.16.0",
     "yarn": "1.22.19"
   },
+  "jest": {
+    "verbose": true,
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  },
   "scripts": {
     "start": "webpack serve --open --config  webpack.dev.js",
     "lint": "eslint",
