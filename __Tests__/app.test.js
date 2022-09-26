@@ -1,8 +1,13 @@
 import React from 'react';
-import TestRenderer from 'react-test-renderer';
-import App from './App/App.jsx';
+import App from 'App/App.jsx';
+import renderer from 'react-test-renderer';
 
-it('renders a correctly', () => {
-  const tree = TestRenderer.create(<App />).toJSON();
-expect(tree).toMatchSnapshot();
+
+describe("App rendering specification",() =>{
+  it('renders the landing page', () => {
+    const component = renderer.create(<App />)
+  })
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+
 });
