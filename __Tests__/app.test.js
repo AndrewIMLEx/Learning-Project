@@ -3,11 +3,9 @@ import App from 'App/App.jsx';
 import renderer from 'react-test-renderer';
 
 
-describe("App rendering specification",() =>{
+describe("landing page",() =>{
   it('renders the landing page', () => {
-    const component = renderer.create(<App />)
-  })
-    const tree = component.toJSON();
+    const tree = renderer.create(<App />).toJSON();
     expect(tree).toMatchSnapshot();
-
+  })
 });
