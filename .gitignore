@@ -2,6 +2,7 @@
 node_modules/
 dist/
 .env
+coverage/
 
 #exclude yarn-error log
 yarn-error.log
