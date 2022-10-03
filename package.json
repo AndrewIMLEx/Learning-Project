@@ -12,7 +12,10 @@
     "moduleDirectories": [
       "node_modules",
       "src"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   },
   "scripts": {
     "start": "webpack serve --open --config  webpack.dev.js",
