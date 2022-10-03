@@ -10,10 +10,3 @@ describe("landing page",() =>{
   })
 })
 
-test('background color should be green',() =>{
-    renderer(<App />);
-    const element = screen.getByText('Hello World! Its me coming')
-    const styles = getComputedStyle(element);
-
-    expect(styles.backgroundColor).toBe('green')
-});
