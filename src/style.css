@@ -1,8 +1,12 @@
-.card{
+.card {
     background-color : #48A8A2;}
 
 h1 {
     color:white;
     text-align: center;
     size: 48px;
+}
+
+h2 {
+    text-align: center;
 }
