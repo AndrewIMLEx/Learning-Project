@@ -1,5 +1,5 @@
 .card {
-    background-color : #49A19C;
+    background-color : #48A8A2;
     width : 80em;
     margin-left : 8em;
     margin-top : 5em;
@@ -19,4 +19,11 @@ h2 {
 
 h3 {
     color: white;
+    margin-left:1em;
+}
+
+.rules {
+    color : white; 
+    width : 20%;
+    height : 70%
 }
