@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Homepage page renders the landing page 1`] = `
-<div>
-  Hello World! Its me coming 
+<div
+  className="card"
+>
+  <h1>
+    Guess The Number
+  </h1>
+  <h2>
+    Non Logged In Gameplay
+  </h2>
 </div>
 `;
