@@ -1,5 +1,5 @@
 import React from "react";
-
+import Rules from "./Rules";
 class Homepage extends React.Component{
     render() {
       return (
@@ -7,6 +7,7 @@ class Homepage extends React.Component{
       <div className="card">
         <h1>Guess The Number</h1> 
         <h2>Non Logged In Gameplay</h2>
+        <Rules/>
         </div>
       </>
       )
