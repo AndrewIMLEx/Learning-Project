@@ -1,5 +1,5 @@
 .card {
-    background-color : #48A8A2;
+    background-color : #49A19C;
     width : 80em;
     margin-left : 8em;
     margin-top : 5em;
@@ -17,14 +17,6 @@ h2 {
     font-size: 32px;
 }
 
-p {
+h3 {
     color: white;
-    margin-left:2.5em;
-}
-
-.rules {
-    color : white; 
-    width : 20%;
-    height : 70%;
-    background-color: #49A19C;
 }
