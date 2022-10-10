@@ -24,17 +24,7 @@ exports[`Homepage page renders the landing page 1`] = `
         The Computer will generate a random number between 1-10 for standard and 1-100 for Difficult.
       </li>
       <li>
-        You only have 
-        <a
-          style={
-            {
-              "color": "red",
-            }
-          }
-        >
-          3 chances
-        </a>
-         to guess a number and beat the Computer
+        You only have 3 chances to guess a number and beat the Computer
       </li>
       <li>
         Don't worry the computer will notify you if your guess is higher or lower than the random generated number
