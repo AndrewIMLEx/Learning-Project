@@ -1,5 +1,5 @@
 .card {
-    background-color : #48A8A2;
+    background-color : #49A19C;
     width : 80em;
     margin-left : 8em;
     margin-top : 5em;
@@ -7,11 +7,12 @@
 
 h1 {
     color:white;
-    text-align: center;
-    size: 48px;
+    text-align : center;
+    font-size : 48px;
+    font-weight : bold 
 }
 
 h2 {
     text-align: center;
-    size: 32px;
+    font-size: 32px;
 }
