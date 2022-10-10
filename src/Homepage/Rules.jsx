@@ -5,7 +5,7 @@ class Rules extends React.Component{
       return (
       <>
       <div className="rules">
-        <h3>How to Play</h3>
+        <h4>How to Play</h4>
         <ol>
             <li>Choose Difficulty Level-Easy(1-10) or Hard(1-100).</li>
             <li>The Computer will generate a random number between 1-10 for standard and 1-100 for Difficult.</li>
