@@ -2,8 +2,15 @@
 
 exports[`landing page renders the landing page 1`] = `
 <div>
-  <div>
-    Hello World! Its me coming 
+  <div
+    className="card"
+  >
+    <h1>
+      Guess The Number
+    </h1>
+    <h2>
+      Non Logged In Gameplay
+    </h2>
   </div>
    
 </div>
