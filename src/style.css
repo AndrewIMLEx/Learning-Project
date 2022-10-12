@@ -17,13 +17,14 @@ h2 {
     font-size: 32px;
 }
 
-h3 {
+p {
     color: white;
-    margin-left:1em;
+    margin-left:2.5em;
 }
 
 .rules {
     color : white; 
     width : 20%;
-    height : 70%
+    height : 70%;
+    background-color: #49A19C;
 }
