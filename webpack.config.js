@@ -25,6 +25,10 @@ module.exports = {  //webpack will take source code from ./src folder index.js a
         use: ['babel-loader'],
         exclude: [/node_modules/, /__tests__/],
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ]
   },
   devServer: {
