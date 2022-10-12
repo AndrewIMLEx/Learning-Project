@@ -5,8 +5,10 @@ orbs:
 
 workflows:
   sample:
-    jobs:
+    jobs: {
       - node/test:
           version: '16.16.0'
           test-results-for: jest 
-          pkg-manager: yarn       
+          pkg-manager: yarn 
+          };
+                
