@@ -7,4 +7,3 @@ describe("Rules page",() =>{
       expect(tree).toMatchSnapshot();
     })
   })
-
