@@ -1,3 +1,18 @@
-body{
-    background-color: green;
-};
+.card {
+    background-color : #49A19C;
+    width : 80em;
+    margin-left : 8em;
+    margin-top : 5em;
+}
+
+h1 {
+    color:white;
+    text-align : center;
+    font-size : 48px;
+    font-weight : bold 
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+}
