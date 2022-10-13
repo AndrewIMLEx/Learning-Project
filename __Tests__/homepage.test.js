@@ -7,6 +7,6 @@ describe("Homepage page",() =>{
       const tree = renderer.create(<Homepage />).toJSON();
       expect(tree).toMatchSnapshot();
     })
-   }
-  );
-  
+   });
+
+   
