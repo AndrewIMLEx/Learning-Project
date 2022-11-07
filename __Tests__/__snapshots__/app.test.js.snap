@@ -5,12 +5,16 @@ exports[`landing page renders the landing page 1`] = `
   <div
     className="card"
   >
-    <h1>
-      Guess The Number
-    </h1>
-    <h2>
-      Non Logged In Gameplay
-    </h2>
+    <div
+      className="header"
+    >
+      <h1>
+        Guess The Number
+      </h1>
+      <h2>
+        Non Logged In Gameplay
+      </h2>
+    </div>
     <div
       className="rules"
     >
@@ -35,10 +39,10 @@ exports[`landing page renders the landing page 1`] = `
           >
             3 chances
           </a>
-           to guess a number and beat the Computer
+           to guess a number and beat the Computer.
         </li>
         <li>
-          Don't worry the computer will notify you if your guess is higher or lower than the random generated number
+          Don't worry the computer will notify you if your guess is higher or lower than the random generated number.
         </li>
       </ol>
     </div>
