@@ -1,3 +1,11 @@
+@font-face{
+  font-family: tsukimi-rounded;
+  src: url(../src/fonts/ttf/TsukimiRounded-Regular.ttf);
+}
+
+*{
+    font-family: tsukimi-rounded;
+}
 .card {
     background-color : #48A8A2;
     width : 80em;
