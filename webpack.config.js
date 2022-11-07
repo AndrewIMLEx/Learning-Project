@@ -29,6 +29,10 @@ module.exports = {  //webpack will take source code from ./src folder index.js a
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(woff|ttf)$/i,
+        type: 'asset/resource'
+      }
     ]
   },
   devServer: {
