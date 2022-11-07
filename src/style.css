@@ -28,6 +28,7 @@ h2 {
 
 h4 {
     margin-left: 2em;
+    color:white;
 }
 
 p {
@@ -45,4 +46,7 @@ p {
 }
 .header {
     background-color: #49A19C;
+}
+.levels {
+    margin-left: 27em;
 }
