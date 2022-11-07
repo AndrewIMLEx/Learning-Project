@@ -17,6 +17,10 @@ h2 {
     font-size: 32px;
 }
 
+h4 {
+    margin-left: 2em;
+}
+
 p {
     color: white;
     margin-left:2.5em;
@@ -27,4 +31,5 @@ p {
     width : 20%;
     height : 70%;
     background-color: #49A19C;
+    margin-left: 15px;
 }
