@@ -1,6 +1,6 @@
 @font-face{
   font-family: tsukimi-rounded;
-  src: url(../src/fonts/ttf/TsukimiRounded-Regular.ttf);
+  src: url(../src/fonts/ttf/TsukimiRounded-Bold.ttf);
 }
 
 *{
@@ -23,6 +23,7 @@ h1 {
 h2 {
     text-align: center;
     font-size: 32px;
+    font-weight: bold;
 }
 
 h4 {
