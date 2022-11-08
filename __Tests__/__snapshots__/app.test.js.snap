@@ -18,21 +18,25 @@ exports[`landing page renders the landing page 1`] = `
     <div
       className="levels"
     >
-      <h4>
-        Select Difficulty Level
-      </h4>
-      <button
-        id="standard"
-        type="submit"
+      <div
+        className="levelselect"
       >
-        Standard
-      </button>
-      <button
-        id="difficult"
-        type="submit"
-      >
-        Difficult
-      </button>
+        <h4>
+          Select Difficulty Level
+        </h4>
+        <button
+          id="standard"
+          type="submit"
+        >
+          Standard
+        </button>
+        <button
+          id="difficult"
+          type="submit"
+        >
+          Difficult
+        </button>
+      </div>
       <div
         className="levelCard"
       >
@@ -95,6 +99,44 @@ exports[`landing page renders the landing page 1`] = `
           </button>
         </div>
       </div>
+    </div>
+    <div
+      className="tally"
+    >
+      <h4>
+        Game Tally
+      </h4>
+      <form
+        id="LevelForm"
+      >
+        <label
+          for="won"
+        >
+          Games Won
+        </label>
+        <input />
+      </form>
+      <br />
+      <form
+        id="LevelForm"
+      >
+        <label
+          for="won"
+        >
+          Games Lost
+        </label>
+        <input />
+      </form>
+      <form
+        id="LevelForm"
+      >
+        <label
+          for="gamesplayed"
+        >
+          Total games Played
+        </label>
+        <input />
+      </form>
     </div>
     <div
       className="rules"
