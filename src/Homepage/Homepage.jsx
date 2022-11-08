@@ -1,6 +1,7 @@
 import React from "react";
 import Rules from "./Rules";
 import Levels from "./Levels";
+import Tally from "./Tally";
 
 class Homepage extends React.Component{
     render() {
@@ -13,6 +14,9 @@ class Homepage extends React.Component{
         </div>
         <div className = "levels">
         <Levels/>
+        </div>
+        <div className="tally">
+        <Tally/>
         </div>
         <Rules/>
         </div>
