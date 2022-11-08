@@ -11,7 +11,7 @@ render(){
         <h3 style={{color: "black"}}>Selected Level</h3>
         <p style={{color: "red"}}>STANDARD</p>
         <form id = "LevelForm">
-            <input/>
+            <input mb-3/>
         </form>
         &nbsp;
         <p style={{color: "red"}}>CORRECT GUESS</p>
