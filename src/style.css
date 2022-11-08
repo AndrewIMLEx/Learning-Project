@@ -42,19 +42,22 @@ p {
     height : 70%;
     background-color: #49A19C;
     margin-left: 15px;
-    margin-top: 3em;
+    margin-top: -7em;
 }
 .header {
     background-color: #49A19C;
 }
 .levels {
     margin-left: 27em;
-    margin-top: 1em;
+    margin-top: 2em;
+}
+.levelCard{
+    margin-top: 2em
 }
 button{
     padding :10px;
     width: 15%;
-    height: 60%;
+    height: 30%;
     background-color: black;
     color: white;
 }
