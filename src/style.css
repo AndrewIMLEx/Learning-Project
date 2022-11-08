@@ -30,10 +30,13 @@ h4 {
     margin-left: 2em;
     color:white;
 }
+h3 {
+    margin-left: 3.5em;
+}
 
 p {
     color: white;
-    margin-left:2.5em;
+    margin-left: 8em;
 }
 
 .rules {
@@ -42,7 +45,7 @@ p {
     height : 70%;
     background-color: #49A19C;
     margin-left: 15px;
-    margin-top: -7em;
+    margin-top: -25em;
 }
 .header {
     background-color: #49A19C;
@@ -51,17 +54,31 @@ p {
     margin-left: 27em;
     margin-top: 2em;
 }
+#LevelForm{
+    margin-left: 3em
+}
 .levelCard{
-    margin-top: 2em
+    margin-top: 2em;
+    background-color: #49A19C;
+    padding: 10px;
 }
 button{
     padding :10px;
     width: 15%;
-    height: 30%;
+    height: 15%;
     background-color: black;
     color: white;
 }
-
+.playButtons{
+    margin-top: 1em;
+}
 #difficult{
     margin-left: 8rem ;
+}
+#guess{
+    margin-left: 8rem ;
+    
+}
+#login{
+    margin-left: 8rem;  
 }
