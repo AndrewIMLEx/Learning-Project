@@ -62,7 +62,7 @@ exports[`landing page renders the landing page 1`] = `
           id="LevelForm"
         >
           <input
-            mb-3={true}
+            id="Levelsinput"
           />
         </form>
          
@@ -114,7 +114,9 @@ exports[`landing page renders the landing page 1`] = `
         >
           Games Won
         </label>
-        <input />
+        <input
+          id="Tally"
+        />
       </form>
       <br />
       <form
@@ -125,7 +127,9 @@ exports[`landing page renders the landing page 1`] = `
         >
           Games Lost
         </label>
-        <input />
+        <input
+          id="Tally"
+        />
       </form>
       <form
         id="LevelForm"
