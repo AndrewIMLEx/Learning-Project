@@ -101,3 +101,13 @@ label {
 #LevelForm{
     width: 50%;
 }
+input{
+    width: 70%;
+}
+#Tally{
+    margin-left: 8em;
+}
+#Levelsinput{
+    margin-left: 5em;
+}
+
