@@ -15,6 +15,87 @@ exports[`Homepage page renders the landing page 1`] = `
     </h2>
   </div>
   <div
+    className="levels"
+  >
+    <h4>
+      Select Difficulty Level
+    </h4>
+    <button
+      id="standard"
+      type="submit"
+    >
+      Standard
+    </button>
+    <button
+      id="difficult"
+      type="submit"
+    >
+      Difficult
+    </button>
+    <div
+      className="levelCard"
+    >
+      <h3
+        style={
+          {
+            "color": "black",
+          }
+        }
+      >
+        Selected Level
+      </h3>
+      <p
+        style={
+          {
+            "color": "red",
+          }
+        }
+      >
+        STANDARD
+      </p>
+      <form
+        id="LevelForm"
+      >
+        <input
+          mb-3={true}
+        />
+      </form>
+       
+      <p
+        style={
+          {
+            "color": "red",
+          }
+        }
+      >
+        CORRECT GUESS
+      </p>
+      <button
+        id="guess"
+        type="submit"
+      >
+        Guess
+      </button>
+       
+      <div
+        className="playButtons"
+      >
+        <button
+          id="play"
+          type="submit"
+        >
+          Play Again
+        </button>
+        <button
+          id="login"
+          type="submit"
+        >
+          Log In
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
     className="rules"
   >
     <h4>
