@@ -2,21 +2,25 @@
 
 exports[`Levels page renders the levels page 1`] = `
 [
-  <h4>
-    Select Difficulty Level
-  </h4>,
-  <button
-    id="standard"
-    type="submit"
+  <div
+    className="levelselect"
   >
-    Standard
-  </button>,
-  <button
-    id="difficult"
-    type="submit"
-  >
-    Difficult
-  </button>,
+    <h4>
+      Select Difficulty Level
+    </h4>
+    <button
+      id="standard"
+      type="submit"
+    >
+      Standard
+    </button>
+    <button
+      id="difficult"
+      type="submit"
+    >
+      Difficult
+    </button>
+  </div>,
   <div
     className="levelCard"
   >
