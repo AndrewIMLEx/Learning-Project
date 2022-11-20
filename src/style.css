@@ -50,6 +50,7 @@ rulescard{
     background-color: #49A19C;
     margin-left: 15px;
     margin-top: -27em;
+    padding: 1.5em
 }
 .header {
     background-color: #49A19C;
@@ -58,6 +59,7 @@ rulescard{
     margin-left: 22em;
     margin-top: 2em;
     margin-right: 33em;
+    padding-top: 2em
 }
 #LevelForm{
     margin-left: 3em;
@@ -96,9 +98,8 @@ button{
         margin-left: 53em;
         margin-top: -25em;
         background-color: #49A19C;
-        margin-right: 0.8em;
-        padding-bottom: 1em;
-        padding-left:4em
+        margin-right: 0.9em;
+        padding: 1.5em;
 }
 label {
     display: inline-block;
