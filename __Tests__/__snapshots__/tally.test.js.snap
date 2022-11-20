@@ -47,7 +47,7 @@ exports[`Tally page renders the rules page 1`] = `
       id="played"
       style={
         {
-          "marginLeft": "4em",
+          "marginLeft": "2em",
         }
       }
     >
