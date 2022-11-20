@@ -11,7 +11,7 @@
     width : 80em;
     margin-left : 16em;
     margin-top : 8em;
-    padding-bottom: 6em;
+    padding-bottom: 3em;
 }
 
 h1 {
@@ -112,7 +112,7 @@ label {
     margin-left: 1.5em;
 }
 input{
-    width: 70%;
+    width: 80%;
     display: inline-block;
     padding-bottom: -9em
 }
