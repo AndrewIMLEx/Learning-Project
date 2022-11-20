@@ -13,7 +13,7 @@ class Tally extends React.Component{
              <input id = "Tally"/></span>
              </form>
              <form id = "Gamesplayed">
-             <label id ="played" for="gamesplayed" style={{marginLeft:"4em"}}>Total Games Played</label>
+             <label id ="played" for="gamesplayed" style={{marginLeft:"2em"}}>Total Games Played</label>
             <input id ="plays"/>
             </form>
             </>
