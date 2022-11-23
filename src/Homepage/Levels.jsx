@@ -29,7 +29,7 @@ render(){
         </div>
         <div className="levelCard">
         <h3 style={{color: "black"}}>Selected Level</h3>
-        <p style={{color: "red"}}>{ this.state.levelSelected}</p>
+        <p style={{color: "red",fontSize: 20,marginLeft:'6em'}}>{ this.state.levelSelected}</p>
         <form id = "LevelForm">
             <input id = "Levelsinput"/>
         </form>
