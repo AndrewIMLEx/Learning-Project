@@ -9,8 +9,9 @@
 .card {
     background-color : #48A8A2;
     width : 80em;
-    margin-left : 8em;
-    margin-top : 5em;
+    margin-left : 16em;
+    margin-top : 8em;
+    padding-bottom: 3em;
 }
 
 h1 {
@@ -38,30 +39,40 @@ p {
     color: white;
     margin-left: 8em;
 }
+rulescard{
+    padding-left:4em;
+}
 
 .rules {
     color : white; 
-    width : 20%;
+    width : 25%;
     height : 70%;
     background-color: #49A19C;
     margin-left: 15px;
-    margin-top: -15em;
+    margin-top: -29em;
+    padding: 1.5em
 }
 .header {
     background-color: #49A19C;
 }
 .levels {
-    margin-left: 22em;
+    margin-left: 24em;
     margin-top: 2em;
-    margin-right: 33em;
+    margin-right: 31em;
+    padding-top: 2em
 }
 #LevelForm{
-    margin-left: 3em
+    margin-left: 5em;
+    width: 50%;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;  
 }
 .levelCard{
     margin-top: 2em;
     background-color: #49A19C;
     padding: 10px;
+    padding-bottom: 4em
 }
 button{
     padding :10px;
@@ -84,20 +95,39 @@ button{
     margin-left: 8rem;  
 }
 .tally {
-        margin-left: 53em;
-        margin-top: -24em;
+        margin-left: 52em;
+        margin-top: -25em;
         background-color: #49A19C;
-        margin-right: 3em
+        margin-right: 0.9em;
+        padding: 1.5em;
 }
 label {
     display: inline-block;
     width: 150px;
     text-align: left;
-    color: white
+    color: white;
+    padding-top: 1em
   }
 .levelselect{
     margin-left: 1.5em;
 }
-#LevelForm{
-    width: 50%;
+input{
+    width: 80%;
+    display: inline-block;
+    padding-bottom: -9em
+}
+#Levelsinput{
+    margin-left: 5em;
+}
+#Gamesplayed{
+    padding-left: 5em
+}
+#played{
+    margin: 10px 20px 30px 10px;
+}
+span{
+    display:inline-block;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
