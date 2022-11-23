@@ -1,6 +1,16 @@
-import React from "react"
+import React, { useState, useEffect} from "react"
 
 class Levels extends React.Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            difficult: false,
+            standard: false,
+            optionSelected: '',
+            standardNum : Math.floor(Math.random() * 10) + 1,
+            difficultNum : Math.floor(Math.random() * 100) + 1
+        }
+    }
 render(){
     return(
         <>
