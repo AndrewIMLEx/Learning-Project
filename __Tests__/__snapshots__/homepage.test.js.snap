@@ -25,13 +25,13 @@ exports[`Homepage page renders the landing page 1`] = `
       </h4>
       <button
         id="standard"
-        type="submit"
+        onClick={[Function]}
       >
         Standard
       </button>
       <button
         id="difficult"
-        type="submit"
+        onClick={[Function]}
       >
         Difficult
       </button>
@@ -52,10 +52,12 @@ exports[`Homepage page renders the landing page 1`] = `
         style={
           {
             "color": "red",
+            "fontSize": 20,
+            "marginLeft": "6em",
           }
         }
       >
-        STANDARD
+        Make a Selection
       </p>
       <form
         id="LevelForm"
