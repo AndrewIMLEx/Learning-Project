@@ -6,6 +6,13 @@
 *{
     font-family: tsukimi-rounded;
 }
+button{
+    padding :10px;
+    width: 30%;
+    height: 15%;
+    background-color: black;
+    color: white;
+}
 .card {
     background-color : #48A8A2;
     width : 80em;
@@ -13,7 +20,16 @@
     margin-top : 8em;
     padding-bottom: 3em;
 }
-
+#difficult{
+    margin-left: 8rem ;
+}
+#guess{
+    margin-left: 8rem ;
+    
+}
+#Gamesplayed{
+    padding-left: 5em;
+ }
 h1 {
     color:white;
     text-align : center;
@@ -34,26 +50,13 @@ h4 {
 h3 {
     margin-left: 3.5em;
 }
-
-p {
-    color: white;
-    margin-left: 8em;
-}
-rulescard{
-    padding-left:4em;
-}
-
-.rules {
-    color : white; 
-    width : 25%;
-    height : 70%;
-    background-color: #49A19C;
-    margin-left: 15px;
-    margin-top: -29em;
-    padding: 1.5em
-}
 .header {
     background-color: #49A19C;
+}
+input{
+    width: 80%;
+    display: inline-block;
+    padding-bottom: -9em
 }
 .levels {
     margin-left: 24em;
@@ -74,32 +77,8 @@ rulescard{
     padding: 10px;
     padding-bottom: 4em
 }
-button{
-    padding :10px;
-    width: 30%;
-    height: 15%;
-    background-color: black;
-    color: white;
-}
-.playButtons{
-    margin-top: 1em;
-}
-#difficult{
-    margin-left: 8rem ;
-}
-#guess{
-    margin-left: 8rem ;
-    
-}
 #login{
     margin-left: 8rem;  
-}
-.tally {
-        margin-left: 52em;
-        margin-top: -25em;
-        background-color: #49A19C;
-        margin-right: 0.9em;
-        padding: 1.5em;
 }
 label {
     display: inline-block;
@@ -111,23 +90,42 @@ label {
 .levelselect{
     margin-left: 1.5em;
 }
-input{
-    width: 80%;
-    display: inline-block;
-    padding-bottom: -9em
-}
+
 #Levelsinput{
     margin-left: 5em;
 }
-#Gamesplayed{
-    padding-left: 5em
+p {
+    color: white;
+    margin-left: 8em;
+}
+.playButtons{
+    margin-top: 1em;
 }
 #played{
     margin: 10px 20px 30px 10px;
+}
+rulescard{
+    padding-left:4em;
+}
+.rules {
+    color : white; 
+    width : 25%;
+    height : 70%;
+    background-color: #49A19C;
+    margin-left: 15px;
+    margin-top: -29em;
+    padding: 1.5em
 }
 span{
     display:inline-block;
     display:flex;
     flex-direction: row;
     justify-content:space-between;
+}
+.tally {
+    margin-left: 52em;
+    margin-top: -25em;
+    background-color: #49A19C;
+    margin-right: 0.9em;
+    padding: 1.5em;
 }
