@@ -12,31 +12,32 @@ class Levels extends React.Component{
             difficultNum: Math.floor(Math.random() *100) + 1 + "",
         };
         this.referenceInput = React.createRef();
+        this.inputFocus = React.createRef();
         this.standard = this.standard.bind(this);
         this.difficult = this.difficult.bind(this);
     }
     standard(){
         this.setState({levelSelected:'Standard'});
+        this.standardNum = Math.floor(Math.random() *10) + 1 + ""
     }
     difficult(){
         this.setState({levelSelected:'Difficult'});
+        this.difficultNum = Math.floor(Math.random() *100) + 1 + ""
     }
     componentDidMount(){
-        this.guessNumber.focus()
+        this.guessNumber.focus();
     }
-    componentDidUpdate(){
-        if(this.state.levelSelected === 'Standard'){
-            this.startNewGame.focus()
-        }else if(this.state.levelSelected === 'Difficult'){
-            this.startNewGame.focus()
-        }
-    }
-    clickedbuttonGuess(e){
-        e.preventDefault();
-        let guessedValue = e.target.input.focus;
-        let startNewStandardGame = this.state.standardNum;
-        let startNewDifficultGame = this.state.difficultNum;
+    clickedbuttonGuess(event){
+        event.preventDefault();
+        guessedValue = event.target.guessNumber.value ;
+        startNewStandardGame = this.standard();
+        startNewDifficultGame = this.diffcult();
 
+        if(this.state.levelSelected === 'Standard'){
+            this.startNewStandardGame.focus()
+        }else if(this.state.levelSelected === 'Difficult'){
+            this.startNewDifficultGame.focus()
+        }
         if(levelSelected === 'Standard'){
             if(guessedValue === startNewStandardGame ){
                 this.setState({tooHightooLow:'Good Job!Correct'});
@@ -72,7 +73,7 @@ render(){
         <form id = "LevelForm">
             <input id = "Levelsinput" type="number" ref={(input) => {this.guessNumber = input;}}/>
         </form>
-        <p style={{color: "red",marginLeft:'6em'}}><a style={{color: "black"}}>Your Guess is:</a>{console.log(this.tooHightooLow)}</p>
+        <p style={{color: "red",marginLeft:'6em'}}><a style={{color: "black"}}>Your Guess is:</a>{this.tooHightooLow}</p>
         <button onClick={this.clickedbuttonGuess}  id="guess" type = "submit">Guess</button>
         &nbsp;
         <div className="playButtons">
