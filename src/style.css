@@ -104,6 +104,11 @@ p {
 #played{
     margin: 10px 20px 30px 10px;
 }
+#plays{
+    background-color:white;
+    padding: 2em; 
+    margin-left: 2em;
+}
 rules-card{
     padding-left:4em;
 }
@@ -125,17 +130,16 @@ span{
 }
 .tally {
     margin-left: 52em;
-    margin-top: -29.5em;
+    margin-top: -29em;
     background-color: #49A19C;
     margin-right: 0.9em;
     padding: 1.5em;
-    padding-bottom: 3em;
+    padding-bottom: 6em;
 }
 #Tally{
     background-color:white;
 }
-#plays{
-    background-color:white;
-    padding: 2em; 
-    margin-left: 2em;
+#won-label,#played{
+    font-size: 14px;
 }
+
