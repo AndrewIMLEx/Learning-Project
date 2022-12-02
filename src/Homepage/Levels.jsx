@@ -4,7 +4,7 @@ class Levels extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            levelSelected: "Level",             
+            levelSelected: "LEVEL",             
             input: "",
             tooHightooLow: "",
             trackSelection: [],
@@ -17,11 +17,11 @@ class Levels extends React.Component{
         this.difficult = this.difficult.bind(this);
     }
     standard(){
-        this.setState({levelSelected:'Standard'});
+        this.setState({levelSelected:'STANDARD'});
         this.standardNum = Math.floor(Math.random() *10) + 1 + ""
     }
     difficult(){
-        this.setState({levelSelected:'Difficult'});
+        this.setState({levelSelected:'DIFFICULT'});
         this.difficultNum = Math.floor(Math.random() *100) + 1 + ""
     }
     componentDidMount(){
@@ -68,12 +68,14 @@ render(){
         <button id="difficult" onClick ={this.difficult}>Difficult</button>
         </div>
         <div className="levelCard">
-        <h3 style={{color: "black"}}>Selected Level</h3>
-        <p style={{color: "red",fontSize: 20,marginLeft:'7em'}}>{ this.state.levelSelected }</p>
+        <h3 style={{color: "black",fontSize: '20px',marginLeft: '6em'}}>Selected Level</h3>
+        <p style={{color: "red",fontSize: 20,marginLeft:'6.8em'}}>{ this.state.levelSelected }</p>
+        &nbsp;
         <form id = "LevelForm">
             <input style={{float:'center'}} id = "Levelsinput" placeholder="Enter Number Here" type="number" ref={(input) => {this.guessNumber = input;}}/>
         </form>
-        <p style={{color: "red",marginLeft:'6em'}}>"CORRECT GUESS"{this.tooHightooLow}</p>
+        <p style={{color: "red",marginLeft:'6.5em'}}>"CORRECT GUESS"{this.tooHightooLow}</p>
+        &nbsp;&nbsp;
         <button onClick={this.clickedbuttonGuess}  id="guess" type = "submit">Guess</button>
         &nbsp;
         <div className="playButtons">
