@@ -4,7 +4,7 @@ class Levels extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            levelSelected: 'Select a Level',             
+            levelSelected: "Level",             
             input: "",
             tooHightooLow: "",
             trackSelection: [],
@@ -33,9 +33,9 @@ class Levels extends React.Component{
         startNewStandardGame = this.standard();
         startNewDifficultGame = this.diffcult();
 
-        if(this.state.levelSelected === 'Standard'){
+        if(this.state.levelSelected === 'STANDARD'){
             this.startNewStandardGame.focus()
-        }else if(this.state.levelSelected === 'Difficult'){
+        }else if(this.state.levelSelected === 'DIFFICULT'){
             this.startNewDifficultGame.focus()
         }
         if(levelSelected === 'Standard'){
@@ -63,7 +63,7 @@ render(){
     return(
         <>
         <div className="levelselect">
-        <h4>Select Difficulty Level</h4>
+        <h5 style={{color: "white",fontSize:"17px",marginLeft:'5em'}}>Select Difficulty Level</h5>
         <button id="standard"  onClick ={this.standard}>Standard</button>
         <button id="difficult" onClick ={this.difficult}>Difficult</button>
         </div>
@@ -71,9 +71,9 @@ render(){
         <h3 style={{color: "black"}}>Selected Level</h3>
         <p style={{color: "red",fontSize: 20,marginLeft:'7em'}}>{ this.state.levelSelected }</p>
         <form id = "LevelForm">
-            <input id = "Levelsinput" type="number" ref={(input) => {this.guessNumber = input;}}/>
+            <input style={{float:'center'}} id = "Levelsinput" placeholder="Enter Number Here" type="number" ref={(input) => {this.guessNumber = input;}}/>
         </form>
-        <p style={{color: "red",marginLeft:'6em'}}><a style={{color: "black"}}>Your Guess is:</a>{this.tooHightooLow}</p>
+        <p style={{color: "red",marginLeft:'6em'}}>"CORRECT GUESS"{this.tooHightooLow}</p>
         <button onClick={this.clickedbuttonGuess}  id="guess" type = "submit">Guess</button>
         &nbsp;
         <div className="playButtons">
