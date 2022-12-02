@@ -74,8 +74,9 @@ input{
 .levelCard{
     margin-top: 2em;
     background-color: #49A19C;
-    padding: 10px;
-    padding-bottom: 8em
+    padding: 14px;
+    padding-bottom: 8em;
+    padding-left:12px
 }
 #login{
     margin-left: 8rem;  
@@ -118,7 +119,7 @@ rules-card{
     height : 70%;
     background-color: #49A19C;
     margin-left: 15px;
-    margin-top: -34em;
+    margin-top: -36em;
     padding: 1.6em 2em 2em 2em;
     padding-bottom: 6em;
 }
@@ -130,11 +131,11 @@ span{
 }
 .tally {
     margin-left: 52em;
-    margin-top: -29em;
+    margin-top: -31em;
     background-color: #49A19C;
     margin-right: 0.9em;
     padding: 1.5em;
-    padding-bottom: 6em;
+    padding-bottom: 8.3em;
 }
 #Tally{
     background-color:white;
