@@ -42,7 +42,6 @@ h2 {
     font-size: 32px;
     font-weight: bold;
 }
-
 h4 {
     margin-left: 2em;
     color:white;
@@ -62,20 +61,21 @@ input{
     margin-left: 24em;
     margin-top: 2em;
     margin-right: 31em;
-    padding-top: 2em
+    padding-top: 2em;
 }
 #LevelForm{
     margin-left: 5em;
     width: 50%;
     margin: 2em;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
+    margin-top:0.9em;  
 }
 .levelCard{
     margin-top: 2em;
     background-color: #49A19C;
     padding: 10px;
-    padding-bottom: 4em
+    padding-bottom: 10em
 }
 #login{
     margin-left: 8rem;  
@@ -104,7 +104,7 @@ p {
 #played{
     margin: 10px 20px 30px 10px;
 }
-rulescard{
+rules-card{
     padding-left:4em;
 }
 .rules {
@@ -113,8 +113,9 @@ rulescard{
     height : 70%;
     background-color: #49A19C;
     margin-left: 15px;
-    margin-top: -29em;
-    padding: 1.5em
+    margin-top: -34em;
+    padding: 1.6em 2em 2em 2em;
+    padding-bottom: 6em;
 }
 span{
     display:inline-block;
@@ -124,8 +125,9 @@ span{
 }
 .tally {
     margin-left: 52em;
-    margin-top: -25em;
+    margin-top: -29em;
     background-color: #49A19C;
     margin-right: 0.9em;
     padding: 1.5em;
+    padding-bottom: 6em;
 }
