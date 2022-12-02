@@ -69,6 +69,7 @@ render(){
         </div>
         <div className="levelCard">
         <h3 style={{color: "black",fontSize: '20px',marginLeft: '6em'}}>Selected Level</h3>
+        &nbsp;
         <p style={{color: "red",fontSize: 20,marginLeft:'6.8em'}}>{ this.state.levelSelected }</p>
         &nbsp;
         <form id = "LevelForm">
