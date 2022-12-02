@@ -7,14 +7,14 @@ class Tally extends React.Component{
             <h4 style={{marginLeft:"4em"}}>Game Tally</h4>
             <form id = "LevelForm">
             <span><label id = "won-label" htmlFor="won">Games Won</label>
-            <output id = "Tally"/></span>
+            <label id = "Tally"/></span>
             <br/><br/>
             <span><label id = "won-label" htmlFor="lost">Games Lost</label>
-             <output id = "Tally"/></span>
+             <label id = "Tally"/></span>
              </form>
              <form id = "Gamesplayed">
-             <label id ="played" htmlFor="gamesplayed" style={{marginLeft:"2em"}}>Total Games Played</label>
-            <input id ="plays"/>
+             <label id ="played" htmlFor="gamesplayed" style={{marginLeft:"2em",padding:"-3em",fontSize:"14px"}}>Total Games Played</label>
+            <label id ="plays"/>
             </form>
             </>
         )
