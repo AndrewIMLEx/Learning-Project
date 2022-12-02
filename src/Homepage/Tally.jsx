@@ -10,7 +10,7 @@ class Tally extends React.Component{
             <label id = "Tally"/></span>
             <br/><br/>
             <span><label id = "won-label" htmlFor="lost">Games Lost</label>
-             <label id = "Tally"/></span>
+            &nbsp;<label id = "Tally"/></span>
              </form>
              <form id = "Gamesplayed">
              <label id ="played" htmlFor="gamesplayed" style={{marginLeft:"2em",padding:"-3em",fontSize:"14px"}}>Total Games Played</label>
