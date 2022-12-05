@@ -18,7 +18,9 @@ class Homepage extends React.Component{
         <div className="tally">
         <Tally/>
         </div>
+        <div className="rules-card">
         <Rules/>
+        </div>
         </div>
       </>
       )
