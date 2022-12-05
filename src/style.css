@@ -119,9 +119,9 @@ rules-card{
     height : 70%;
     background-color: #49A19C;
     margin-left: 15px;
-    margin-top: -36em;
+    margin-top: -33.5em;
     padding: 1.6em 2em 2em 2em;
-    padding-bottom: 6em;
+    padding-bottom: 5em;
 }
 span{
     display:inline-block;
@@ -131,11 +131,11 @@ span{
 }
 .tally {
     margin-left: 52em;
-    margin-top: -31em;
+    margin-top: -28.5em;
     background-color: #49A19C;
     margin-right: 0.9em;
     padding: 1.5em;
-    padding-bottom: 8.3em;
+    padding-bottom: 6em;
 }
 #Tally{
     background-color:white;

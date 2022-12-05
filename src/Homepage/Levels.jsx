@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from "react"
+import React, { Component} from "react"
 
 class Levels extends React.Component{
     constructor(props) {
@@ -11,34 +11,36 @@ class Levels extends React.Component{
             standardNum: Math.floor(Math.random() *10) + 1 + "",
             difficultNum: Math.floor(Math.random() *100) + 1 + "",
         };
-        this.referenceInput = React.createRef();
-        this.inputFocus = React.createRef();
         this.standard = this.standard.bind(this);
         this.difficult = this.difficult.bind(this);
+        this.guessNumber = this.guessNumber.bind(this);
+        this.clickedbuttonGuess = this.clickedbuttonGuess.bind(this)
     }
     standard(){
         this.setState({levelSelected:'STANDARD'});
-        this.standardNum = Math.floor(Math.random() *10) + 1 + ""
+        this.setState({standardNum: Math.floor(Math.random() *10) + 1 + ""});
+        this.setState({tooHightooLow:''})
     }
     difficult(){
         this.setState({levelSelected:'DIFFICULT'});
-        this.difficultNum = Math.floor(Math.random() *100) + 1 + ""
+        this.setState({difficultNum : Math.floor(Math.random() *100) + 1 + ""});
+        this.setState({tooHightooLow:''})
     }
     componentDidMount(){
-        this.guessNumber.focus();
+        console.log(this.state.standardNum);
+        console.log(this.state.difficultNum)
     }
-    clickedbuttonGuess(event){
-        event.preventDefault();
-        guessedValue = event.target.guessNumber.value ;
-        startNewStandardGame = this.standard();
-        startNewDifficultGame = this.diffcult();
-
-        if(this.state.levelSelected === 'STANDARD'){
-            this.startNewStandardGame.focus()
-        }else if(this.state.levelSelected === 'DIFFICULT'){
-            this.startNewDifficultGame.focus()
-        }
-        if(levelSelected === 'Standard'){
+    guessNumber(e){
+        e.preventDefault();
+        this.setState({ input:e.target.value})
+    }
+    clickedbuttonGuess(e){
+        e.preventDefault();
+        console.log(this.state.input)
+       let startNewStandardGame = standard;
+         let startNewDifficultGame = difficult;
+         let guessedValue = this.guessNumber;
+        if(this.levelSelected === 'STANDARD'){
             if(guessedValue === startNewStandardGame ){
                 this.setState({tooHightooLow:'Good Job!Correct'});
             }if(guessedValue > startNewStandardGame,10){
@@ -46,7 +48,7 @@ class Levels extends React.Component{
             }else if (guessedValue < startNewStandardGame,10){
                 this.setState({tooHightooLow:'Wrong!Too Low'});
             }
-            }else if(levelSelected === 'Difficult'){
+            }else if(this.levelSelected === 'DIFFICULT'){
                 if(guessedValue == startNewDifficultGame){
                     this.setState({tooHightooLow:'Good Job!Correct'});
                     }if(guessedValue > startNewDifficultGame,100){
@@ -73,9 +75,9 @@ render(){
         <p style={{color: "red",fontSize: 20,marginLeft:'6.8em'}}>{ this.state.levelSelected }</p>
         &nbsp;
         <form id = "LevelForm">
-            <input style={{float:'center'}} id = "Levelsinput" placeholder="Enter Number Here" type="number" ref={(input) => {this.guessNumber = input;}}/>
+            <input style={{float:'center'}} id = "Levelsinput" placeholder="Enter Number Here" type="number" onChange = {this.guessNumber} ref={this.inputFocus}/>
         </form>
-        <p style={{color: "red",marginLeft:'6.5em'}}>"CORRECT GUESS"{this.tooHightooLow}</p>
+        <p style={{color: "red",marginLeft:'6.5em'}}>{this.state.tooHightooLow}</p>
         &nbsp;&nbsp;
         <button onClick={this.clickedbuttonGuess}  id="guess" type = "submit">Guess</button>
         &nbsp;
