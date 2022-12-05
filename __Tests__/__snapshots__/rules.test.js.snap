@@ -4,7 +4,15 @@ exports[`Rules page renders the rules page 1`] = `
 <div
   className="rules"
 >
-  <h4>
+  <h4
+    style={
+      {
+        "color": "white",
+        "fontSize": "18px",
+        "marginLeft": "3em",
+      }
+    }
+  >
     How to Play
   </h4>
   <ol>

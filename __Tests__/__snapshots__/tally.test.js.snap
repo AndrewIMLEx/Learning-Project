@@ -16,12 +16,12 @@ exports[`Tally page renders the rules page 1`] = `
   >
     <span>
       <label
-        for="won"
+        htmlFor="won"
         id="won-label"
       >
         Games Won
       </label>
-      <input
+      <label
         id="Tally"
       />
     </span>
@@ -29,12 +29,13 @@ exports[`Tally page renders the rules page 1`] = `
     <br />
     <span>
       <label
-        for="lost"
+        htmlFor="lost"
         id="won-label"
       >
         Games Lost
       </label>
-      <input
+       
+      <label
         id="Tally"
       />
     </span>
@@ -43,17 +44,19 @@ exports[`Tally page renders the rules page 1`] = `
     id="Gamesplayed"
   >
     <label
-      for="gamesplayed"
+      htmlFor="gamesplayed"
       id="played"
       style={
         {
+          "fontSize": "14px",
           "marginLeft": "2em",
+          "padding": "-4em",
         }
       }
     >
       Total Games Played
     </label>
-    <input
+    <label
       id="plays"
     />
   </form>,

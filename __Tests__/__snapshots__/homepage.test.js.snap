@@ -20,9 +20,17 @@ exports[`Homepage page renders the landing page 1`] = `
     <div
       className="levelselect"
     >
-      <h4>
+      <h5
+        style={
+          {
+            "color": "white",
+            "fontSize": "17px",
+            "marginLeft": "5em",
+          }
+        }
+      >
         Select Difficulty Level
-      </h4>
+      </h5>
       <button
         id="standard"
         onClick={[Function]}
@@ -43,41 +51,53 @@ exports[`Homepage page renders the landing page 1`] = `
         style={
           {
             "color": "black",
+            "fontSize": "20px",
+            "marginLeft": "6em",
           }
         }
       >
         Selected Level
       </h3>
-      <p
-        style={
-          {
-            "color": "red",
-            "fontSize": 20,
-            "marginLeft": "6em",
-          }
-        }
-      >
-        Make a Selection
-      </p>
-      <form
-        id="LevelForm"
-      >
-        <input
-          id="Levelsinput"
-        />
-      </form>
        
       <p
         style={
           {
             "color": "red",
+            "fontSize": 20,
+            "marginLeft": "6.8em",
           }
         }
       >
-        CORRECT GUESS
+        LEVEL
       </p>
+       
+      <form
+        id="LevelForm"
+      >
+        <input
+          id="Levelsinput"
+          onChange={[Function]}
+          placeholder="Enter Number Here"
+          style={
+            {
+              "float": "center",
+            }
+          }
+          type="number"
+        />
+      </form>
+      <p
+        style={
+          {
+            "color": "red",
+            "marginLeft": "6.5em",
+          }
+        }
+      />
+        
       <button
         id="guess"
+        onClick={[Function]}
         type="submit"
       >
         Guess
@@ -118,12 +138,12 @@ exports[`Homepage page renders the landing page 1`] = `
     >
       <span>
         <label
-          for="won"
+          htmlFor="won"
           id="won-label"
         >
           Games Won
         </label>
-        <input
+        <label
           id="Tally"
         />
       </span>
@@ -131,12 +151,13 @@ exports[`Homepage page renders the landing page 1`] = `
       <br />
       <span>
         <label
-          for="lost"
+          htmlFor="lost"
           id="won-label"
         >
           Games Lost
         </label>
-        <input
+         
+        <label
           id="Tally"
         />
       </span>
@@ -145,17 +166,19 @@ exports[`Homepage page renders the landing page 1`] = `
       id="Gamesplayed"
     >
       <label
-        for="gamesplayed"
+        htmlFor="gamesplayed"
         id="played"
         style={
           {
+            "fontSize": "14px",
             "marginLeft": "2em",
+            "padding": "-4em",
           }
         }
       >
         Total Games Played
       </label>
-      <input
+      <label
         id="plays"
       />
     </form>
@@ -166,7 +189,15 @@ exports[`Homepage page renders the landing page 1`] = `
     <div
       className="rules"
     >
-      <h4>
+      <h4
+        style={
+          {
+            "color": "white",
+            "fontSize": "18px",
+            "marginLeft": "3em",
+          }
+        }
+      >
         How to Play
       </h4>
       <ol>

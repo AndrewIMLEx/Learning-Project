@@ -5,9 +5,17 @@ exports[`Levels page renders the levels page 1`] = `
   <div
     className="levelselect"
   >
-    <h4>
+    <h5
+      style={
+        {
+          "color": "white",
+          "fontSize": "17px",
+          "marginLeft": "5em",
+        }
+      }
+    >
       Select Difficulty Level
-    </h4>
+    </h5>
     <button
       id="standard"
       onClick={[Function]}
@@ -28,41 +36,53 @@ exports[`Levels page renders the levels page 1`] = `
       style={
         {
           "color": "black",
+          "fontSize": "20px",
+          "marginLeft": "6em",
         }
       }
     >
       Selected Level
     </h3>
-    <p
-      style={
-        {
-          "color": "red",
-          "fontSize": 20,
-          "marginLeft": "6em",
-        }
-      }
-    >
-      Make a Selection
-    </p>
-    <form
-      id="LevelForm"
-    >
-      <input
-        id="Levelsinput"
-      />
-    </form>
      
     <p
       style={
         {
           "color": "red",
+          "fontSize": 20,
+          "marginLeft": "6.8em",
         }
       }
     >
-      CORRECT GUESS
+      LEVEL
     </p>
+     
+    <form
+      id="LevelForm"
+    >
+      <input
+        id="Levelsinput"
+        onChange={[Function]}
+        placeholder="Enter Number Here"
+        style={
+          {
+            "float": "center",
+          }
+        }
+        type="number"
+      />
+    </form>
+    <p
+      style={
+        {
+          "color": "red",
+          "marginLeft": "6.5em",
+        }
+      }
+    />
+      
     <button
       id="guess"
+      onClick={[Function]}
       type="submit"
     >
       Guess
