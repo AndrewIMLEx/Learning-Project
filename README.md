@@ -9,9 +9,9 @@ Align main heading to the center of the page
 | 1.Git                 | Version Control                | [Repo];                                                         |
 | 2.Webpack             | Bundler                        | [Mode]; [Production];                        |
 | 3.Babel               | Transpiler                     | [React Class]; [Loader]; [Polyfill]                                                     |
-| 4.React               | Component Web                  | [Hot Loading]; [Lazy Loading]; [Strict Mode]; |
+| 4.React               | Component Web                  | [React Refresh ]; [Lazy Loading]; [Strict Mode]; |
 | 5.Yarn                 | Node                           | [Package ];                                                                  |
-| 6.Test                | Test code                      | [Jest Enzyme]                                                                     |
+| 6.Test                | Test code                      | [Jest]                                                                     |
 
 
 <div align="left">
@@ -72,13 +72,16 @@ bash
 <!-- Running the Application Development Mode -->
 <h2>Running Development Server</h2>
 
-  1.Yarn run build-dev
+  1.Yarn run start
 
-<!-- Running the Application Development Mode -->
+<!-- Running the Application Production Mode -->
+<h2>Running Development Server</h2>
+
+  1.Yarn run start
+
 <h2>Cleaning a build</h2>
 
   1.Yarn run clean
-
 
 <!-- Technologies Used -->
   
@@ -91,7 +94,6 @@ bash
   <p>5.Heroku: A cloud platform used to configure and deploy projects</p>
   <h2>CI/CD tools</h2>
   <p>1.Circle CI</p> 
-  <p>2.Hound CI</p> 
   <p>3.ESLINT</p>
 </p>
 <div>
