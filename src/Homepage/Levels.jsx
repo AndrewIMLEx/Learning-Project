@@ -89,7 +89,7 @@ render(){
             <input style={{float:'center'}} value={this.state.input}  id = "Levelsinput" placeholder="Enter Number Here" type="number" onChange = {this.guessNumber} ref={this.inputFocus}/>
         </form>
         &nbsp;
-        <p style={{color: "red",fontSize: 20, marginLeft:'6em'}}>{this.state.tooHightooLow}</p>
+        <p style={{color: "red",fontSize: 20, marginLeft:'5.5em'}}>{this.state.tooHightooLow}</p>
         &nbsp;&nbsp;
         <button onClick={this.clickedbuttonGuess}  id="guess" type = "submit">Guess</button>
         &nbsp;
