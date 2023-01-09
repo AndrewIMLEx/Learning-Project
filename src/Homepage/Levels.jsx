@@ -1,4 +1,4 @@
-import React, { Component} from "react"
+import React, { Component, useCallback, useState} from "react"
 
 class Levels extends React.Component{
     constructor(props) {
@@ -35,10 +35,10 @@ class Levels extends React.Component{
         this.setState({levelSelected:'Difficult'});
     }
     componentDidUpdate(){
-       
+           
         }
     componentDidMount(){
-     
+        
     }
     guessNumber(e){
         e.preventDefault();
@@ -50,8 +50,8 @@ clickedbuttonGuess(e){
     let startNewDifficultGame = this.state.difficultNum 
     let guessedValue = this.guessNumber;  
 
-    //console.log(this.state.levelSelected);
-    //console.log(this.state.input);
+    console.log(this.state.levelSelected);
+    console.log(this.state.input);
     console.log(this.state.difficultNum)
 
         if(guessedValue == startNewStandardGame){
