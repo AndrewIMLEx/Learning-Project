@@ -53,7 +53,7 @@ exports[`landing page renders the landing page 1`] = `
             {
               "color": "black",
               "fontSize": "20px",
-              "marginLeft": "6em",
+              "marginLeft": "5.5em",
             }
           }
         >
@@ -65,7 +65,7 @@ exports[`landing page renders the landing page 1`] = `
             {
               "color": "red",
               "fontSize": 20,
-              "marginLeft": "6.8em",
+              "marginLeft": "6.5em",
             }
           }
         >
@@ -85,16 +85,21 @@ exports[`landing page renders the landing page 1`] = `
               }
             }
             type="number"
+            value=""
           />
         </form>
+         
         <p
           style={
             {
               "color": "red",
-              "marginLeft": "6.5em",
+              "fontSize": 20,
+              "marginLeft": "5.5em",
             }
           }
-        />
+        >
+          HIGH OR LOW
+        </p>
           
         <button
           id="guess"
@@ -109,6 +114,7 @@ exports[`landing page renders the landing page 1`] = `
         >
           <button
             id="play"
+            onClick={[Function]}
             type="submit"
           >
             Play Again
