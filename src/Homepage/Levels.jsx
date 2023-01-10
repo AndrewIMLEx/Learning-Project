@@ -38,7 +38,7 @@ class Levels extends React.Component{
            
         }
     componentDidMount(){
-        
+
     }
     guessNumber(e){
         e.preventDefault();
@@ -46,21 +46,23 @@ class Levels extends React.Component{
     }
 clickedbuttonGuess(e){
     e.preventDefault(); 
-    let startNewStandardGame = this.state.standardNum 
-    let startNewDifficultGame = this.state.difficultNum 
-    let guessedValue = this.guessNumber;  
+    let startNewStandardGame = this.state.standardNum;
+    let startNewDifficultGame = this.state.difficultNum;
+    let guessedValue = this.state.input; 
 
-    console.log(this.state.levelSelected);
-    console.log(this.state.input);
-    console.log(this.state.difficultNum)
-
+    if(standard){ 
         if(guessedValue == startNewStandardGame){
-            this.setState({tooHightooLow:'Good Job!Correct'});
+            this.setState({tooHightooLow:'Good Job!Correct'})
         }else if(guessedValue < startNewStandardGame){
-            this.setState({tooHightooLow:'Wrong!Too Low'});
+            this.setState({tooHightooLow:'Wrong!Too Low'})
         }else if(guessedValue  > startNewStandardGame){
-            this.setState({tooHightooLow:'Wrong!Too high'});
+            this.setState({tooHightooLow:'Wrong!Too high'})
         }
+        else if(this.state.input !== "") {
+            this.setState({tooHightooLow:'Please Enter a Number!'})
+        }
+    }
+    else if(difficult){
         if(guessedValue  == startNewDifficultGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }else if(guessedValue  > startNewDifficultGame){
@@ -68,10 +70,11 @@ clickedbuttonGuess(e){
         }else if(guessedValue  < startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!Too Low'});
         }
-        else {
-            this.setState({tooHightooLow:'PLEASE ENTER A NUMBER'});
-        }
+        else if(this.state.input == "") {
+        this.setState({tooHightooLow:'Please Enter a Number!'});
     }
+}
+}
 render(){
     return(
         <>
