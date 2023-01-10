@@ -50,7 +50,7 @@ clickedbuttonGuess(e){
     let startNewDifficultGame = this.state.difficultNum;
     let guessedValue = this.state.input; 
 
-    if(standard){ 
+    if(this.standard){ 
         if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'})
         }else if(guessedValue < startNewStandardGame){
@@ -62,7 +62,7 @@ clickedbuttonGuess(e){
             this.setState({tooHightooLow:'Please Enter a Number!'})
         }
     }
-    else if(difficult){
+    else if(this.difficult){
         if(guessedValue  == startNewDifficultGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }else if(guessedValue  > startNewDifficultGame){
