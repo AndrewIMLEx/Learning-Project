@@ -28,10 +28,12 @@ class Levels extends React.Component{
     }
     standard(e){
         e.preventDefault();
+        //e.currentTarget.disabled = true;
         this.setState({levelSelected:'Standard'});
     }
     difficult(e){
         e.preventDefault();
+        //e.currentTarget.disabled = true;
         this.setState({levelSelected:'Difficult'});
     }
     componentDidUpdate(){
@@ -51,19 +53,19 @@ clickedbuttonGuess(e){
     let guessedValue = this.state.input; 
 
     if(this.standard){ 
-        if(guessedValue == startNewStandardGame){
+        if(guessedValue > 10 || guessedValue > startNewStandardGame){
+            this.setState({tooHightooLow:'Enter 1 to 10'});
+        }else if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }else if(guessedValue < startNewStandardGame){
             this.setState({tooHightooLow:'Wrong!Too Low'});
         }else if(guessedValue  > startNewStandardGame){
             this.setState({tooHightooLow:'Wrong!Too high'});
-        }else if(guessedValue >= 10){
-            this.setState({tooHightooLow:'Enter a number between 1 to 10'});
-        }
-        else {
+        }else {
             this.setState({tooHightooLow:'Please Enter a Number!'});
         }
-    }
+      }
+    
     else if(this.difficult){
         if(guessedValue  == startNewDifficultGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
