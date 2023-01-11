@@ -28,18 +28,21 @@ class Levels extends React.Component{
     }
     standard(e){
         e.preventDefault();
-        //e.currentTarget.disabled = true;
         this.setState({levelSelected:'Standard'});
     }
     difficult(e){
         e.preventDefault();
-        //e.currentTarget.disabled = true;
         this.setState({levelSelected:'Difficult'});
     }
     componentDidUpdate(){
-           
-        }
+    
+    }
     componentDidMount(){
+        if(this.difficult){
+            this.setState({standardNum : Math.floor(Math.random() *10) + 1 + "",});
+        }else if(this.standard){
+            this.setState({difficultNum : Math.floor(Math.random() * 100 + 1) + "",});
+        }
 
     }
     guessNumber(e){
@@ -53,30 +56,22 @@ clickedbuttonGuess(e){
     let guessedValue = this.state.input; 
 
     if(this.standard){ 
-        if(guessedValue > 10 ){
-            this.setState({tooHightooLow:'Enter 1 to 10'});
-        }else if(guessedValue == startNewStandardGame){
+        if( guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }else if(guessedValue < startNewStandardGame){
-            this.setState({tooHightooLow:'Wrong!Too Low'});
+                this.setState({tooHightooLow:'Wrong!Too Low'});
         }else if(guessedValue  > startNewStandardGame){
-            this.setState({tooHightooLow:'Wrong!Too high'});
-        }else {
-            this.setState({tooHightooLow:'Please Enter a Number!'});
-        }
-      }
-    
-    else if(this.difficult){
-        if(guessedValue  == startNewDifficultGame){
+                this.setState({tooHightooLow:'Wrong!Too high'});
+        };
+
+    }else if(this.difficult){
+        if( guessedValue  == startNewDifficultGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }else if(guessedValue  > startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!too High'});
         }else if(guessedValue  < startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!Too Low'});
         }
-        else {
-        this.setState({tooHightooLow:'Please Enter a Number!'});
-    }
 }
 console.log(this.state.levelSelected);
 console.log(this.state.input);
