@@ -1,4 +1,4 @@
-import React, { Component, useCallback, useState} from "react"
+import React from "react"
 
 class Levels extends React.Component{
     constructor(props) {
@@ -14,7 +14,7 @@ class Levels extends React.Component{
         this.difficult = this.difficult.bind(this);
         this.guessNumber = this.guessNumber.bind(this);
         this.clickedbuttonGuess = this.clickedbuttonGuess.bind(this);
-        this.Initial = this.Initial.bind(this)
+        this.Initial = this.Initial.bind(this);
     }
     Initial(){
         this.setState({
@@ -52,14 +52,16 @@ clickedbuttonGuess(e){
 
     if(this.standard){ 
         if(guessedValue == startNewStandardGame){
-            this.setState({tooHightooLow:'Good Job!Correct'})
+            this.setState({tooHightooLow:'Good Job!Correct'});
         }else if(guessedValue < startNewStandardGame){
-            this.setState({tooHightooLow:'Wrong!Too Low'})
+            this.setState({tooHightooLow:'Wrong!Too Low'});
         }else if(guessedValue  > startNewStandardGame){
-            this.setState({tooHightooLow:'Wrong!Too high'})
+            this.setState({tooHightooLow:'Wrong!Too high'});
+        }else if(guessedValue >= 10){
+            this.setState({tooHightooLow:'Enter a number between 1 to 10'});
         }
-        else if(this.state.input !== "") {
-            this.setState({tooHightooLow:'Please Enter a Number!'})
+        else {
+            this.setState({tooHightooLow:'Please Enter a Number!'});
         }
     }
     else if(this.difficult){
@@ -70,10 +72,14 @@ clickedbuttonGuess(e){
         }else if(guessedValue  < startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!Too Low'});
         }
-        else if(this.state.input == "") {
+        else {
         this.setState({tooHightooLow:'Please Enter a Number!'});
     }
 }
+console.log(this.state.levelSelected);
+console.log(this.state.input);
+console.log(('standard :'),this.state.standardNum);
+console.log(('difficult :'),this.state.difficultNum);
 }
 render(){
     return(
