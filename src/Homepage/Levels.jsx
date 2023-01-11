@@ -53,7 +53,7 @@ clickedbuttonGuess(e){
     let guessedValue = this.state.input; 
 
     if(this.standard){ 
-        if(guessedValue > 10 || guessedValue > startNewStandardGame){
+        if(guessedValue > 10 ){
             this.setState({tooHightooLow:'Enter 1 to 10'});
         }else if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
