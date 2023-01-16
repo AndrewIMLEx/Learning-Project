@@ -23,7 +23,8 @@ class Levels extends React.Component{
             tooHightooLow: "HIGH OR LOW",
             guessNumber: "",
             standardNum : Math.floor(Math.random() *10) + 1 + "",
-            difficultNum: Math.floor(Math.random() * 100 + 1) + "",         
+            difficultNum: Math.floor(Math.random() * 100 + 1) + "", 
+            guessTally: 1,      
     })
     }
     standard(e){
@@ -38,12 +39,7 @@ class Levels extends React.Component{
     
     }
     componentDidMount(){
-        if(this.difficult){
-            this.setState({standardNum : Math.floor(Math.random() *10) + 1 + "",});
-        }else if(this.standard){
-            this.setState({difficultNum : Math.floor(Math.random() * 100 + 1) + "",});
-        }
-
+     
     }
     guessNumber(e){
         e.preventDefault();
@@ -54,18 +50,24 @@ clickedbuttonGuess(e){
     let startNewStandardGame = this.state.standardNum;
     let startNewDifficultGame = this.state.difficultNum;
     let guessedValue = this.state.input; 
-
-    if(this.standard){ 
-        if( guessedValue == startNewStandardGame){
+    
+    if(this.standard){
+        if(guessedValue > 10){
+            this.setState({tooHightooLow:'Enter 1-10'}); 
+        }
+        else if( guessedValue === startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }else if(guessedValue < startNewStandardGame){
                 this.setState({tooHightooLow:'Wrong!Too Low'});
         }else if(guessedValue  > startNewStandardGame){
                 this.setState({tooHightooLow:'Wrong!Too high'});
-        };
-
-    }else if(this.difficult){
-        if( guessedValue  == startNewDifficultGame){
+        }
+    };
+    if(this.difficult){
+        if(guessedValue > 100){
+            this.setState({tooHightooLow:'Enter 1-100'}); 
+        } 
+        else if( guessedValue  === startNewDifficultGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }else if(guessedValue  > startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!too High'});
