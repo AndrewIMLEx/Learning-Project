@@ -85,7 +85,7 @@ exports[`landing page renders the landing page 1`] = `
               }
             }
             type="number"
-            value=""
+            value={[]}
           />
         </form>
          

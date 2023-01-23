@@ -69,7 +69,7 @@ exports[`Levels page renders the levels page 1`] = `
           }
         }
         type="number"
-        value=""
+        value={[]}
       />
     </form>
      
