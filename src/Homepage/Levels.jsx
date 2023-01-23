@@ -69,10 +69,6 @@ clickedbuttonGuess(e){
             this.setState({tooHightooLow:'Wrong!Too Low'});
        }
 }
-console.log(this.state.levelSelected);
-console.log(this.state.input);
-console.log(('standard :'),this.state.standardNum);
-console.log(('difficult :'),this.state.difficultNum);
 }
 render(){
     return(
