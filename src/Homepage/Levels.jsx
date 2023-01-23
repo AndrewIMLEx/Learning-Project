@@ -5,10 +5,10 @@ class Levels extends React.Component{
         super(props);
         this.state = {
             levelSelected: "LEVEL",             
-            input: "",
+            input: [],
             tooHightooLow: "HIGH OR LOW",
-            standardNum: Math.floor(Math.random() *10) + 1 + "",
-            difficultNum: Math.floor(Math.random() *100) + 1 + "",
+            standardNum: Math.floor(Math.random() *10) + 1,
+            difficultNum: Math.floor(Math.random() *100) + 1,
         };
         this.standard = this.standard.bind(this);
         this.difficult = this.difficult.bind(this);
@@ -19,12 +19,9 @@ class Levels extends React.Component{
     Initial(){
         this.setState({
             levelSelected: "LEVEL",             
-            input: "",
+            input: [],
             tooHightooLow: "HIGH OR LOW",
-            guessNumber: "",
-            standardNum : Math.floor(Math.random() *10) + 1 + "",
-            difficultNum: Math.floor(Math.random() * 100 + 1) + "", 
-            guessTally: 1,      
+            guessNumber: [],     
     })
     }
     standard(e){
@@ -36,10 +33,10 @@ class Levels extends React.Component{
         this.setState({levelSelected:'Difficult'});
     }
     componentDidUpdate(){
-    
+       
     }
     componentDidMount(){
-     
+    
     }
     guessNumber(e){
         e.preventDefault();
@@ -50,30 +47,25 @@ clickedbuttonGuess(e){
     let startNewStandardGame = this.state.standardNum;
     let startNewDifficultGame = this.state.difficultNum;
     let guessedValue = this.state.input; 
+
     
-    if(this.standard){
-        if(guessedValue > 10){
-            this.setState({tooHightooLow:'Enter 1-10'}); 
-        }
-        else if( guessedValue === startNewStandardGame){
-            this.setState({tooHightooLow:'Good Job!Correct'});
-        }else if(guessedValue < startNewStandardGame){
-                this.setState({tooHightooLow:'Wrong!Too Low'});
-        }else if(guessedValue  > startNewStandardGame){
-                this.setState({tooHightooLow:'Wrong!Too high'});
-        }
-    };
-    if(this.difficult){
-        if(guessedValue > 100){
-            this.setState({tooHightooLow:'Enter 1-100'}); 
+    if(this.standard){   
+        if(guessedValue === startNewStandardGame){
+            this.setState({tooHightooLow:'Good Job!Correct'})
+        }if(guessedValue < startNewStandardGame){
+                this.setState({tooHightooLow:'Wrong!Too Low'})
+        }if(guessedValue  > startNewStandardGame){
+                this.setState({tooHightooLow:'Wrong!Too high'})
         } 
-        else if( guessedValue  === startNewDifficultGame){
-            this.setState({tooHightooLow:'Good Job!Correct'});
-        }else if(guessedValue  > startNewDifficultGame){
-            this.setState({tooHightooLow:'Wrong!too High'});
-        }else if(guessedValue  < startNewDifficultGame){
-            this.setState({tooHightooLow:'Wrong!Too Low'});
-        }
+    }
+    else if(this.difficult){
+        if(guessedValue  === startNewDifficultGame){
+            this.setState({tooHightooLow:'Good Job!Correct'})
+        }if(guessedValue  > startNewDifficultGame){
+            this.setState({tooHightooLow:'Wrong!too High'})
+        }if(guessedValue  < startNewDifficultGame){
+            this.setState({tooHightooLow:'Wrong!Too Low'})
+       }
 }
 console.log(this.state.levelSelected);
 console.log(this.state.input);
