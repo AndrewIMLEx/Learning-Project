@@ -7,8 +7,8 @@ class Levels extends React.Component{
             levelSelected: "LEVEL",             
             input: [],
             tooHightooLow: "HIGH OR LOW",
-            standardNum: Math.floor(Math.random() *10) + 1,
-            difficultNum: Math.floor(Math.random() *100) + 1,
+            standardNum: Math.floor (Math.random() *10),
+            difficultNum: Math.floor (Math.random() *100),
         };
         this.standard = this.standard.bind(this);
         this.difficult = this.difficult.bind(this);
@@ -21,7 +21,9 @@ class Levels extends React.Component{
             levelSelected: "LEVEL",             
             input: [],
             tooHightooLow: "HIGH OR LOW",
-            guessNumber: [],     
+            guessNumber: [],
+            standardNum: Math.floor (Math.random() *10),
+            difficultNum: Math.floor (Math.random() *100),     
     })
     }
     standard(e){
@@ -50,21 +52,21 @@ clickedbuttonGuess(e){
 
     
     if(this.standard){   
-        if(guessedValue === startNewStandardGame){
-            this.setState({tooHightooLow:'Good Job!Correct'})
+        if(guessedValue == startNewStandardGame){
+            this.setState({tooHightooLow:'Good Job!Correct'});
         }if(guessedValue < startNewStandardGame){
-                this.setState({tooHightooLow:'Wrong!Too Low'})
+                this.setState({tooHightooLow:'Wrong!Too Low'});
         }if(guessedValue  > startNewStandardGame){
-                this.setState({tooHightooLow:'Wrong!Too high'})
-        } 
+                this.setState({tooHightooLow:'Wrong!Too high'});
+        }
     }
     else if(this.difficult){
-        if(guessedValue  === startNewDifficultGame){
-            this.setState({tooHightooLow:'Good Job!Correct'})
+        if(guessedValue  == startNewDifficultGame){
+            this.setState({tooHightooLow:'Good Job!Correct'});
         }if(guessedValue  > startNewDifficultGame){
-            this.setState({tooHightooLow:'Wrong!too High'})
+            this.setState({tooHightooLow:'Wrong!too High'});
         }if(guessedValue  < startNewDifficultGame){
-            this.setState({tooHightooLow:'Wrong!Too Low'})
+            this.setState({tooHightooLow:'Wrong!Too Low'});
        }
 }
 console.log(this.state.levelSelected);
