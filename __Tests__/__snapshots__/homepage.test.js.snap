@@ -61,7 +61,7 @@ exports[`Homepage page renders the landing page 1`] = `
         id="LevelForm"
       >
         <input
-          mb-3={true}
+          id="Levelsinput"
         />
       </form>
        
@@ -102,71 +102,96 @@ exports[`Homepage page renders the landing page 1`] = `
   <div
     className="tally"
   >
-    <h4>
+    <h4
+      style={
+        {
+          "marginLeft": "4em",
+        }
+      }
+    >
       Game Tally
     </h4>
     <form
       id="LevelForm"
     >
-      <label
-        for="won"
-      >
-        Games Won
-      </label>
-      <input />
+      <span>
+        <label
+          for="won"
+          id="won-label"
+        >
+          Games Won
+        </label>
+        <input
+          id="Tally"
+        />
+      </span>
+      <br />
+      <br />
+      <span>
+        <label
+          for="lost"
+          id="won-label"
+        >
+          Games Lost
+        </label>
+        <input
+          id="Tally"
+        />
+      </span>
     </form>
-    <br />
     <form
-      id="LevelForm"
-    >
-      <label
-        for="won"
-      >
-        Games Lost
-      </label>
-      <input />
-    </form>
-    <form
-      id="LevelForm"
+      id="Gamesplayed"
     >
       <label
         for="gamesplayed"
+        id="played"
+        style={
+          {
+            "marginLeft": "2em",
+          }
+        }
       >
-        Total games Played
+        Total Games Played
       </label>
-      <input />
+      <input
+        id="plays"
+      />
     </form>
   </div>
   <div
-    className="rules"
+    className="rules-card"
   >
-    <h4>
-      How to Play
-    </h4>
-    <ol>
-      <li>
-        Choose Difficulty Level-Easy(1-10) or Hard(1-100).
-      </li>
-      <li>
-        The Computer will generate a random number between 1-10 for standard and 1-100 for Difficult.
-      </li>
-      <li>
-        You only have 
-        <a
-          style={
-            {
-              "color": "red",
+    <div
+      className="rules"
+    >
+      <h4>
+        How to Play
+      </h4>
+      <ol>
+        <li>
+          Choose Difficulty Level-Easy(1-10) or Hard(1-100).
+        </li>
+        <li>
+          The Computer will generate a random number between 1-10 for standard and 1-100 for Difficult.
+        </li>
+        <li>
+          You only have 
+          <a
+            style={
+              {
+                "color": "red",
+              }
             }
-          }
-        >
-          3 chances
-        </a>
-         to guess a number and beat the Computer.
-      </li>
-      <li>
-        Don't worry the computer will notify you if your guess is higher or lower than the random generated number.
-      </li>
-    </ol>
+          >
+            3 chances
+          </a>
+           to guess a number and beat the Computer.
+        </li>
+        <li>
+          Don't worry the computer will notify you if your guess is higher or lower than the random generated number.
+        </li>
+      </ol>
+    </div>
   </div>
 </div>
 `;
