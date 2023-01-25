@@ -99,9 +99,7 @@ exports[`landing page renders the landing page 1`] = `
               "marginLeft": "5.2em",
             }
           }
-        >
-          HIGH OR LOW
-        </p>
+        />
           
         <button
           id="guess"
