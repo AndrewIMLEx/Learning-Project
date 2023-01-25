@@ -80,20 +80,20 @@ render(){
         <button id="difficult" onClick ={this.difficult}>Difficult</button>
         </div>
         <div className="levelCard">
-        <h3 style={{color: "black",fontSize: '20px',marginLeft: '5.7em',paddingTop: '2em'}}>Selected Level</h3>
+        <h3 style={{color: "black",fontSize: '20px',marginLeft: '5.2em',paddingTop: '2em'}}>Selected Level</h3>
         &nbsp;
-        <p style={{color: "red",fontSize: 20,marginLeft:'7.1em'}}>{ this.state.levelSelected }</p>
+        <p style={{color: "red",fontSize: 20,marginLeft:'6.6em'}}>{ this.state.levelSelected }</p>
         &nbsp;
         <form id = "LevelForm">
-            <input style={{float:'center'}} value={this.state.input}  id = "Levelsinput" placeholder="Enter Number Here" type="number" onChange = {this.guessNumber} ref={this.inputFocus}/>
+            <input style={{float:'center',fontSize:14}} value={this.state.input}  id = "Levelsinput" placeholder="Enter Number" type="number" onChange = {this.guessNumber} ref={this.inputFocus}/>
         </form>
         &nbsp;
-        <p style={{color: "red",fontSize: 20, marginLeft:'5.5em'}}>{this.state.tooHightooLow}</p>
+        <p style={{color: "red",fontSize: 20, marginLeft:'5.2em'}}>{this.state.tooHightooLow}</p>
         &nbsp;&nbsp;
         <button onClick={this.clickedbuttonGuess}  id="guess" type = "submit">Guess</button>
         &nbsp;
         <div className="playButtons">
-        <button id="play"  onClick={this.Initial} type = "submit">Play Again</button>
+        <button id="playAgain"  onClick={this.Initial} type = "submit">Play Again</button>
         <button id="login" type = "submit">Log In</button>
         </div>
         </div>

@@ -8,7 +8,7 @@ class Tally extends React.Component{
             <form id = "LevelForm">
             <span><label id = "won-label" htmlFor="won">Games Won</label>
             <label id = "Tally"/></span>
-            <br/><br/>
+            &nbsp;&nbsp;
             <span><label id = "won-label" htmlFor="lost">Games Lost</label>
             &nbsp;<label id = "Tally"/></span>
              </form>
