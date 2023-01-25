@@ -52,7 +52,8 @@ exports[`Homepage page renders the landing page 1`] = `
           {
             "color": "black",
             "fontSize": "20px",
-            "marginLeft": "5.5em",
+            "marginLeft": "5.2em",
+            "paddingTop": "2em",
           }
         }
       >
@@ -64,7 +65,7 @@ exports[`Homepage page renders the landing page 1`] = `
           {
             "color": "red",
             "fontSize": 20,
-            "marginLeft": "6.5em",
+            "marginLeft": "6.6em",
           }
         }
       >
@@ -77,10 +78,11 @@ exports[`Homepage page renders the landing page 1`] = `
         <input
           id="Levelsinput"
           onChange={[Function]}
-          placeholder="Enter Number Here"
+          placeholder="Enter Number"
           style={
             {
               "float": "center",
+              "fontSize": 14,
             }
           }
           type="number"
@@ -93,7 +95,7 @@ exports[`Homepage page renders the landing page 1`] = `
           {
             "color": "red",
             "fontSize": 20,
-            "marginLeft": "5.5em",
+            "marginLeft": "5.2em",
           }
         }
       >
@@ -112,7 +114,7 @@ exports[`Homepage page renders the landing page 1`] = `
         className="playButtons"
       >
         <button
-          id="play"
+          id="playAgain"
           onClick={[Function]}
           type="submit"
         >
@@ -130,64 +132,67 @@ exports[`Homepage page renders the landing page 1`] = `
   <div
     className="tally"
   >
-    <h4
-      style={
-        {
-          "marginLeft": "4em",
-        }
-      }
+    <div
+      className="tallycard"
     >
-      Game Tally
-    </h4>
-    <form
-      id="LevelForm"
-    >
-      <span>
-        <label
-          htmlFor="won"
-          id="won-label"
-        >
-          Games Won
-        </label>
-        <label
-          id="Tally"
-        />
-      </span>
-      <br />
-      <br />
-      <span>
-        <label
-          htmlFor="lost"
-          id="won-label"
-        >
-          Games Lost
-        </label>
-         
-        <label
-          id="Tally"
-        />
-      </span>
-    </form>
-    <form
-      id="Gamesplayed"
-    >
-      <label
-        htmlFor="gamesplayed"
-        id="played"
+      <h4
         style={
           {
-            "fontSize": "14px",
-            "marginLeft": "2em",
-            "padding": "-4em",
+            "marginLeft": "4em",
           }
         }
       >
-        Total Games Played
-      </label>
-      <label
-        id="plays"
-      />
-    </form>
+        Game Tally
+      </h4>
+      <form
+        id="LevelForm"
+      >
+        <span>
+          <label
+            htmlFor="won"
+            id="won-label"
+          >
+            Games Won
+          </label>
+          <label
+            id="Tally"
+          />
+        </span>
+          
+        <span>
+          <label
+            htmlFor="lost"
+            id="won-label"
+          >
+            Games Lost
+          </label>
+           
+          <label
+            id="Tally"
+          />
+        </span>
+      </form>
+      <form
+        id="Gamesplayed"
+      >
+        <label
+          htmlFor="gamesplayed"
+          id="played"
+          style={
+            {
+              "fontSize": "14px",
+              "marginLeft": "2em",
+              "padding": "-4em",
+            }
+          }
+        >
+          Total Games Played
+        </label>
+        <label
+          id="plays"
+        />
+      </form>
+    </div>
   </div>
   <div
     className="rules-card"
