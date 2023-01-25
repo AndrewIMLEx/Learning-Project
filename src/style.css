@@ -82,7 +82,7 @@ input{
     margin-left: 1em;
     background-color: #49A19C;
     padding: 18px;
-    padding-bottom: 4em;
+    padding-bottom: 1em;
     padding-left:20px
 }
 #login{
@@ -134,7 +134,8 @@ rules-card{
     margin-left: 15px;
     margin-top: -33em;
     padding: 1.6em 2em 2em 2em;
-    padding-bottom: 4.5em;
+    padding-bottom: 2.5em;
+    padding-top: 4em;
 }
 span{
     display:inline-block;
@@ -144,12 +145,13 @@ span{
 }
 .tally {
     margin-left: 52em;
-    margin-top: -33em;
+    margin-top: -33.4em;
     background-color: #49A19C;
     margin-right: 0.9em;
     padding: 1.5em 4em;
     padding-right:4em;
-    padding-bottom: 8em;
+    padding-top:4em;
+    padding-bottom: 6.8em;
 }
 #Tally{
     background-color:white;

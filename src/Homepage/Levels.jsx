@@ -73,7 +73,6 @@ clickedbuttonGuess(e){
 render(){
     return(
         <>
-
         <div className="levelselect">
         <h5 style={{color: "white",fontSize:"17px",marginLeft:'5em'}}>Select Difficulty Level</h5>
         <button id="standard"  onClick ={this.standard}>Standard</button>
