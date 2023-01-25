@@ -6,7 +6,7 @@ class Levels extends React.Component{
         this.state = {
             levelSelected: "LEVEL",             
             input: [],
-            tooHightooLow: "HIGH OR LOW",
+            tooHightooLow: "",
             standardNum: Math.floor (Math.random() *10),
             difficultNum: Math.floor (Math.random() *100),
         };
@@ -20,7 +20,7 @@ class Levels extends React.Component{
         this.setState({
             levelSelected: "LEVEL",             
             input: [],
-            tooHightooLow: "HIGH OR LOW",
+            tooHightooLow:"" ,
             guessNumber: [],
             standardNum: Math.floor (Math.random() *10),
             difficultNum: Math.floor (Math.random() *100),     
@@ -28,7 +28,10 @@ class Levels extends React.Component{
     }
     standard(e){
         e.preventDefault();
-        this.setState({levelSelected:'Standard'});
+        this.setState({
+            levelSelected:'Standard',
+            standardNum: Math.floor (Math.random() *10),
+        });
     }
     difficult(e){
         e.preventDefault();
