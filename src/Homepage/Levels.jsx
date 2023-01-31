@@ -81,7 +81,7 @@ render(){
         <button id="difficult" onClick ={this.difficult}>Difficult</button>
         </div>
         <div className="levelCard">
-        <h3 style={{color: "black",fontSize: '20px',marginLeft: '5.4em',paddingTop: '2em'}}>Selected Level</h3>
+        <h3 style={{color: "black",fontSize: '20px',marginLeft: '5.1em',paddingTop: '2em'}}>Selected Level</h3>
         &nbsp;
         <p style={{color: "red",fontSize: 20,marginLeft:'6.3em'}}>{ this.state.levelSelected }</p>
         &nbsp;
