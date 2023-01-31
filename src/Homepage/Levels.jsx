@@ -6,7 +6,7 @@ class Levels extends React.Component{
         this.state = {
             levelSelected: "LEVEL",             
             input: [],
-            tooHightooLow: "",
+            tooHightooLow: "HIGH OR LOW",
             standardNum: Math.floor (Math.random() *10),
             difficultNum: Math.floor (Math.random() *100),
         };
@@ -20,7 +20,7 @@ class Levels extends React.Component{
         this.setState({
             levelSelected: "LEVEL",             
             input: [],
-            tooHightooLow:"" ,
+            tooHightooLow:"HIGH OR LOW" ,
             guessNumber: [],
             standardNum: Math.floor (Math.random() *10),
             difficultNum: Math.floor (Math.random() *100),     
@@ -52,8 +52,7 @@ clickedbuttonGuess(e){
     let startNewStandardGame = this.state.standardNum;
     let startNewDifficultGame = this.state.difficultNum;
     let guessedValue = this.state.input; 
-
-    
+ 
     if(this.standard){   
         if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
@@ -82,15 +81,15 @@ render(){
         <button id="difficult" onClick ={this.difficult}>Difficult</button>
         </div>
         <div className="levelCard">
-        <h3 style={{color: "black",fontSize: '20px',marginLeft: '5.2em',paddingTop: '2em'}}>Selected Level</h3>
+        <h3 style={{color: "black",fontSize: '20px',marginLeft: '4.8em',paddingTop: '2em'}}>Selected Level</h3>
         &nbsp;
-        <p style={{color: "red",fontSize: 20,marginLeft:'6.6em'}}>{ this.state.levelSelected }</p>
+        <p style={{color: "red",fontSize: 20,marginLeft:'6.3em'}}>{ this.state.levelSelected }</p>
         &nbsp;
         <form id = "LevelForm">
             <input style={{float:'center',fontSize:14}} value={this.state.input}  id = "Levelsinput" placeholder="Enter Number" type="number" onChange = {this.guessNumber} ref={this.inputFocus}/>
         </form>
         &nbsp;
-        <p style={{color: "red",fontSize: 20, marginLeft:'5.2em'}}>{this.state.tooHightooLow}</p>
+        <p style={{color: "red",fontSize: 20, marginLeft:'4.7em'}}>{this.state.tooHightooLow}</p>
         &nbsp;&nbsp;
         <button onClick={this.clickedbuttonGuess}  id="guess" type = "submit">Guess</button>
         &nbsp;

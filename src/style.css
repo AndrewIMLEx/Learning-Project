@@ -22,6 +22,7 @@ button{
     margin-left : 16em;
     margin-top : 8em;
     padding-bottom: 3em;
+    resize: none;
 }
 #difficult{
     margin-left: 8rem ;
@@ -83,7 +84,8 @@ input{
     background-color: #49A19C;
     padding: 18px;
     padding-bottom: 1em;
-    padding-left:20px
+    padding-left:20px;
+    resize: none;
 }
 #login{
     margin-left: 6rem;  
@@ -96,7 +98,7 @@ label {
     padding-top: 1em
   }
 .levelselect{
-    margin-left: 1.5em;
+    margin-left: 2em;
 }
 #login{
     padding-bottom: 2em;
@@ -112,7 +114,7 @@ p{
 .playButtons{
   display: flex;
   flex-direction: row;
-  padding-left:1.8em;
+  padding-left:2em;
   padding-top:1em
 }
 #played{
