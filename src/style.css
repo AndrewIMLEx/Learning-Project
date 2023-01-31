@@ -29,7 +29,6 @@ button{
 }
 #guess{
     margin-left: 7rem ;
-    
 }
 #Gamesplayed{
     padding-left: 3em;
@@ -104,7 +103,7 @@ label {
     padding-bottom: 2em;
 }
 #Levelsinput{
-    margin-left: 4.8em;
+    margin-left: 5.8em;
     padding:0.4em
 }
 p{
