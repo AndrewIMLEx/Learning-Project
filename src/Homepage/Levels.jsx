@@ -52,7 +52,7 @@ clickedbuttonGuess(e){
     let startNewStandardGame = this.state.standardNum;
     let startNewDifficultGame = this.state.difficultNum;
     let guessedValue = this.state.input; 
- 
+
     if(this.standard){   
         if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
@@ -69,8 +69,8 @@ clickedbuttonGuess(e){
             this.setState({tooHightooLow:'Wrong!too High'});
         }if(guessedValue  < startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!Too Low'});
-       }
-}
+        }
+    }
 }
 render(){
     return(
@@ -86,7 +86,7 @@ render(){
         <p style={{color: "red",fontSize: 20,marginLeft:'6.3em'}}>{ this.state.levelSelected }</p>
         &nbsp;
         <form id = "LevelForm">
-            <input style={{float:'center',fontSize:14}} value={this.state.input}  id = "Levelsinput" placeholder="Enter Number" type="number" onChange = {this.guessNumber} ref={this.inputFocus}/>
+            <input style={{float:'center',fontSize:14}} value={this.state.input}  id = "Levelsinput" placeholder="Enter Number" type="number" min="0" max="100" onChange = {this.guessNumber} ref={this.inputFocus}/>
         </form>
         &nbsp;
         <p style={{color: "red",fontSize: 20, marginLeft:'4.9em'}}>{this.state.tooHightooLow}</p>
