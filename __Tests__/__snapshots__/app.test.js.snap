@@ -61,15 +61,20 @@ exports[`landing page renders the landing page 1`] = `
           Selected Level
         </h3>
          
-        <p
-          style={
-            {
-              "color": "red",
-              "fontSize": 20,
-              "marginLeft": "6.3em",
+        <div
+          className="selectedlevelCard"
+          id="levelselectedcard"
+        >
+          <p
+            style={
+              {
+                "color": "red",
+                "fontSize": 20,
+                "marginLeft": "6.3em",
+              }
             }
-          }
-        />
+          />
+        </div>
          
         <form
           id="LevelForm"
@@ -90,16 +95,20 @@ exports[`landing page renders the landing page 1`] = `
             value={[]}
           />
         </form>
-         
-        <p
-          style={
-            {
-              "color": "red",
-              "fontSize": 20,
-              "marginLeft": "4.2em",
+        <div
+          className="highlowoutputcard"
+          id="toohightoolowcard"
+        >
+          <p
+            style={
+              {
+                "color": "red",
+                "fontSize": 20,
+                "marginLeft": "4.2em",
+              }
             }
-          }
-        />
+          />
+        </div>
            
         <button
           id="guess"
