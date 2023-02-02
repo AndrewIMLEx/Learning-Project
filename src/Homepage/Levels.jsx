@@ -7,8 +7,8 @@ class Levels extends React.Component{
             levelSelected: "",             
             input: [],
             tooHightooLow: "",
-            standardNum: Math.floor (Math.random() *10),
-            difficultNum: Math.floor (Math.random() *100),
+            standardNum: [],
+            difficultNum: [],
         };
         this.standard = this.standard.bind(this);
         this.difficult = this.difficult.bind(this);
@@ -21,9 +21,9 @@ class Levels extends React.Component{
             levelSelected: "",             
             input: [],
             tooHightooLow:"" ,
-            guessNumber: [],
-            standardNum: Math.floor (Math.random() *10),
-            difficultNum: Math.floor (Math.random() *100),     
+            guessNumber: [], 
+            standardNum: [],
+            difficultNum: [],       
     })
     }
     standard(e){
@@ -35,7 +35,10 @@ class Levels extends React.Component{
     }
     difficult(e){
         e.preventDefault();
-        this.setState({levelSelected:'Difficult'});
+        this.setState({
+            levelSelected:'Difficult',
+            difficultNum: Math.floor (Math.random() *100), 
+        });
     }
     componentDidUpdate(){
        
@@ -53,7 +56,10 @@ clickedbuttonGuess(e){
     let startNewDifficultGame = this.state.difficultNum;
     let guessedValue = this.state.input; 
 
-    if(this.standard){   
+    if(guessedValue == "" || guessedValue < 0 || guessedValue > 100){
+        this.setState({tooHightooLow:'Enter valid number'});
+    }
+    else if(this.standard){
         if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }if(guessedValue < startNewStandardGame){
@@ -89,13 +95,13 @@ render(){
             <input style={{float:'center',fontSize:14}} value={this.state.input}  id = "Levelsinput" placeholder="Enter Number" type="number" min="0" max="100" onChange = {this.guessNumber} ref={this.inputFocus}/>
         </form>
         &nbsp;
-        <p style={{color: "red",fontSize: 20, marginLeft:'4.9em'}}>{this.state.tooHightooLow}</p>
+        <p style={{color: "red",fontSize: 20, marginLeft:'4.2em'}}>{this.state.tooHightooLow}</p>
         &nbsp;
         &nbsp;
         <button onClick={this.clickedbuttonGuess}  id="guess" type = "submit">Guess</button>
         &nbsp;
         <div className="playButtons">
-        <button id="playAgain"  onClick={this.Initial} type = "submit">Play Again</button>
+        <button id="playAgain" onClick={this.Initial} type = "submit">Play Again</button>
         <button id="login" type = "submit">Log In</button>
         </div>
         </div>
