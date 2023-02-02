@@ -39,10 +39,9 @@ class Levels extends React.Component{
         });
     }
     componentDidUpdate(){
-       
     }
     componentDidMount(){
-    
+         
     }
     guessNumber(e){
         e.preventDefault();
@@ -63,6 +62,7 @@ clickedbuttonGuess(e){
         this.setState({tooHightooLow:'Enter valid number'});
     }
     else if(this.standard){
+        this.setState({startNewStandardGame:Math.floor (Math.random() *10),})
         if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }if(guessedValue < startNewStandardGame){
