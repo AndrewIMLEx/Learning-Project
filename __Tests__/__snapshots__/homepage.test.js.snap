@@ -25,7 +25,7 @@ exports[`Homepage page renders the landing page 1`] = `
           {
             "color": "white",
             "fontSize": "17px",
-            "marginLeft": "5em",
+            "marginLeft": "4.5em",
           }
         }
       >
@@ -52,7 +52,7 @@ exports[`Homepage page renders the landing page 1`] = `
           {
             "color": "black",
             "fontSize": "20px",
-            "marginLeft": "5.2em",
+            "marginLeft": "5.1em",
             "paddingTop": "2em",
           }
         }
@@ -65,18 +65,18 @@ exports[`Homepage page renders the landing page 1`] = `
           {
             "color": "red",
             "fontSize": 20,
-            "marginLeft": "6.6em",
+            "marginLeft": "6.3em",
           }
         }
-      >
-        LEVEL
-      </p>
+      />
        
       <form
         id="LevelForm"
       >
         <input
           id="Levelsinput"
+          max="100"
+          min="0"
           onChange={[Function]}
           placeholder="Enter Number"
           style={
@@ -95,11 +95,11 @@ exports[`Homepage page renders the landing page 1`] = `
           {
             "color": "red",
             "fontSize": 20,
-            "marginLeft": "5.2em",
+            "marginLeft": "4.2em",
           }
         }
       />
-        
+         
       <button
         id="guess"
         onClick={[Function]}
