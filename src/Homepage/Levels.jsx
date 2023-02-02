@@ -21,9 +21,7 @@ class Levels extends React.Component{
             levelSelected: "",             
             input: [],
             tooHightooLow:"" ,
-            guessNumber: [], 
-            standardNum: [],
-            difficultNum: [],       
+            guessNumber: "",       
     })
     }
     standard(e){
@@ -55,6 +53,11 @@ clickedbuttonGuess(e){
     let startNewStandardGame = this.state.standardNum;
     let startNewDifficultGame = this.state.difficultNum;
     let guessedValue = this.state.input; 
+
+    console.log(`selected level is ${this.state.levelSelected}`);
+    console.log(`Input number is ${guessedValue}`);
+    console.log(`standard is ${startNewStandardGame}`);
+    console.log(`difficult is ${startNewDifficultGame}`);
 
     if(guessedValue == "" || guessedValue < 0 || guessedValue > 100){
         this.setState({tooHightooLow:'Enter valid number'});
@@ -89,13 +92,16 @@ render(){
         <div className="levelCard">
         <h3 style={{color: "black",fontSize: '20px',marginLeft: '5.1em',paddingTop: '2em'}}>Selected Level</h3>
         &nbsp;
+        <div id="levelselectedcard" className="selectedlevelCard">
         <p style={{color: "red",fontSize: 20,marginLeft:'6.3em'}}>{ this.state.levelSelected }</p>
+        </div>
         &nbsp;
         <form id = "LevelForm">
             <input style={{float:'center',fontSize:14}} value={this.state.input}  id = "Levelsinput" placeholder="Enter Number" type="number" min="0" max="100" onChange = {this.guessNumber} ref={this.inputFocus}/>
         </form>
-        &nbsp;
+        <div id ="toohightoolowcard" className="highlowoutputcard">
         <p style={{color: "red",fontSize: 20, marginLeft:'4.2em'}}>{this.state.tooHightooLow}</p>
+        </div>
         &nbsp;
         &nbsp;
         <button onClick={this.clickedbuttonGuess}  id="guess" type = "submit">Guess</button>
