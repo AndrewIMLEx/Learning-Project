@@ -63,11 +63,6 @@ clickedbuttonGuess(e){
     let startNewDifficultGame = this.state.difficultNum;
     let guessedValue = this.state.input; 
 
-    console.log(`selected level is ${this.state.levelSelected}`);
-    console.log(`Input number is ${guessedValue}`);
-    console.log(`standard is ${startNewStandardGame}`);
-    console.log(`difficult is ${startNewDifficultGame}`);
-
     if(guessedValue == "" || guessedValue < 0 || guessedValue > 100){
         this.setState({tooHightooLow:'Enter valid number',
         });
