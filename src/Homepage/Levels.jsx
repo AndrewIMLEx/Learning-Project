@@ -41,7 +41,7 @@ class Levels extends React.Component{
     componentDidUpdate(){
     }
     componentDidMount(){
-         
+    
     }
     guessNumber(e){
         e.preventDefault();
@@ -59,10 +59,10 @@ clickedbuttonGuess(e){
     console.log(`difficult is ${startNewDifficultGame}`);
 
     if(guessedValue == "" || guessedValue < 0 || guessedValue > 100){
-        this.setState({tooHightooLow:'Enter valid number'});
+        this.setState({tooHightooLow:'Enter valid number',
+        });
     }
     else if(this.standard){
-        this.setState({startNewStandardGame:Math.floor (Math.random() *10),})
         if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }if(guessedValue < startNewStandardGame){
@@ -74,10 +74,10 @@ clickedbuttonGuess(e){
     else if(this.difficult){
         if(guessedValue  == startNewDifficultGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
-        }if(guessedValue  > startNewDifficultGame){
-            this.setState({tooHightooLow:'Wrong!too High'});
         }if(guessedValue  < startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!Too Low'});
+        }if(guessedValue  > startNewDifficultGame){
+            this.setState({tooHightooLow:'Wrong!too High'});
         }
     }
 }
@@ -97,7 +97,7 @@ render(){
         </div>
         &nbsp;
         <form id = "LevelForm">
-            <input style={{float:'center',fontSize:14}} value={this.state.input}  id = "Levelsinput" placeholder="Enter Number" type="number" min="0" max="100" onChange = {this.guessNumber} ref={this.inputFocus}/>
+            <input style={{float:'center',fontSize:14}}  value={this.state.input}  id = "Levelsinput" placeholder="Enter Number" type="number" min="0" max="100" onChange = {this.guessNumber} ref={this.inputFocus}/>
         </form>
         <div id ="toohightoolowcard" className="highlowoutputcard">
         <p style={{color: "red",fontSize: 20, marginLeft:'4.2em'}}>{this.state.tooHightooLow}</p>
@@ -116,3 +116,4 @@ render(){
 }
 }
 export default Levels
+
