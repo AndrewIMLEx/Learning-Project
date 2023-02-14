@@ -9,6 +9,8 @@ class Levels extends React.Component{
             tooHightooLow: "",
             standardNum: [],
             difficultNum: [],
+            gameStarted: false,
+            gameEnded: false
         };
         this.standard = this.standard.bind(this);
         this.difficult = this.difficult.bind(this);
@@ -21,7 +23,9 @@ class Levels extends React.Component{
             levelSelected: "",             
             input: [],
             tooHightooLow:"" ,
-            guessNumber: "",       
+            guessNumber: "",
+            gameStarted: false,
+            gameEnded: false       
     })
     }
     standard(e){
@@ -39,9 +43,15 @@ class Levels extends React.Component{
         });
     }
     componentDidUpdate(){
+        setTimeout(() => {
+            this.setState({ 
+                standardNum: Math.floor (Math.random() *10),
+                difficultNum: Math.floor (Math.random() *100),
+        });
+          }, 1000);
     }
     componentDidMount(){
-    
+      
     }
     guessNumber(e){
         e.preventDefault();
