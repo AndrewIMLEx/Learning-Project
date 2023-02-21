@@ -2,12 +2,12 @@
   font-family: tsukimi-rounded;
   src: url(../src/fonts/ttf/TsukimiRounded-Bold.ttf);
 }
-@media only screen and (min-width: 1024px) {
-}
 *{
     font-family: tsukimi-rounded;
     margin:0;
     padding:0;
+    max-width: 1260px;
+    max-height:1200px
 }
 button{
     padding :10px;

@@ -9,8 +9,6 @@ class Levels extends React.Component{
             tooHightooLow: "",
             standardNum: [],
             difficultNum: [],
-            gameStarted: false,
-            gameEnded: false
         };
         this.standard = this.standard.bind(this);
         this.difficult = this.difficult.bind(this);
@@ -23,9 +21,7 @@ class Levels extends React.Component{
             levelSelected: "",             
             input: [],
             tooHightooLow:"" ,
-            guessNumber: "",
-            gameStarted: false,
-            gameEnded: false       
+            guessNumber: "",     
     })
     }
     standard(e){
@@ -63,11 +59,16 @@ clickedbuttonGuess(e){
     let startNewDifficultGame = this.state.difficultNum;
     let guessedValue = this.state.input; 
 
+    console.log(`selected level is ${this.state.levelSelected}`);
+    console.log(`Input number is ${guessedValue}`);
+    console.log(`standard is ${startNewStandardGame}`);
+    console.log(`difficult is ${startNewDifficultGame}`);
+
     if(guessedValue == "" || guessedValue < 0 || guessedValue > 100){
         this.setState({tooHightooLow:'Enter valid number',
         });
-    }
-    else if(this.standard){
+    };
+    if(this.standard){
         if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }if(guessedValue < startNewStandardGame){
@@ -84,13 +85,13 @@ clickedbuttonGuess(e){
         }if(guessedValue  > startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!too High'});
         }
-    }
+    };
 }
 render(){
     return(
         <>
         <div className="levelselect">
-        <h5 style={{color: "white",fontSize:"17px",marginLeft:'4.5em'}}>Select Difficulty Level</h5>
+        <h5 style={{color: "white",fontWeight:"bolder",fontSize:"20px",marginLeft:'3em',paddingBottom:'1em'}}>Select Difficulty Level</h5>
         <button id="standard"  onClick ={this.standard}>Standard</button>
         <button id="difficult" onClick ={this.difficult}>Difficult</button>
         </div>
