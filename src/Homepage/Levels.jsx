@@ -91,12 +91,12 @@ render(){
     return(
         <>
         <div className="levelselect">
-        <h5 style={{color: "white",fontWeight:"bolder",fontSize:"20px",marginLeft:'3em',paddingBottom:'1em'}}>Select Difficulty Level</h5>
+        <h5 style={{color: "white",fontWeight:"bolder",fontSize: 20,marginLeft:'3em',paddingBottom:'1em'}}>Select Difficulty Level</h5>
         <button id="standard"  onClick ={this.standard}>Standard</button>
         <button id="difficult" onClick ={this.difficult}>Difficult</button>
         </div>
         <div className="levelCard">
-        <h3 style={{color: "black",fontSize: '20px',marginLeft: '5.1em',paddingTop: '2em'}}>Selected Level</h3>
+        <h3 style={{color: "black",fontSize: 20 ,marginLeft: '5.1em',paddingTop: '2em'}}>Selected Level</h3>
         &nbsp;
         <div id="levelselectedcard" className="selectedlevelCard">
         <p style={{color: "red",fontSize: 20,marginLeft:'6.3em'}}>{ this.state.levelSelected }</p>

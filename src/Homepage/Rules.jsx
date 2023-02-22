@@ -5,7 +5,7 @@ class Rules extends React.Component{
       return (
       <>
       <div className="rules">
-        <h4 style={{color: "white",fontSize:"18px",marginLeft:'3em'}}>How to Play</h4>
+        <h4 style={{color: "white",fontSize:"1em",marginLeft:'3em'}}>How to Play</h4>
         <ol>
             <li>Choose Difficulty Level-Easy(1-10) or Hard(1-100).</li>
 
