@@ -24,8 +24,10 @@ exports[`Homepage page renders the landing page 1`] = `
         style={
           {
             "color": "white",
-            "fontSize": "17px",
-            "marginLeft": "4.5em",
+            "fontSize": 20,
+            "fontWeight": "bolder",
+            "marginLeft": "3em",
+            "paddingBottom": "1em",
           }
         }
       >
@@ -51,7 +53,7 @@ exports[`Homepage page renders the landing page 1`] = `
         style={
           {
             "color": "black",
-            "fontSize": "20px",
+            "fontSize": 20,
             "marginLeft": "5.1em",
             "paddingTop": "2em",
           }
@@ -211,7 +213,7 @@ exports[`Homepage page renders the landing page 1`] = `
         style={
           {
             "color": "white",
-            "fontSize": "18px",
+            "fontSize": "1em",
             "marginLeft": "3em",
           }
         }
