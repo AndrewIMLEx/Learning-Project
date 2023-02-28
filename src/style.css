@@ -42,10 +42,13 @@ button{
     overflow: hidden;
 }
 #difficult{
-    margin-left: 8rem ;
+    margin-left: 10rem ;
 }
 #guess{
     margin-left: 6.5rem ;
+}
+#standard{
+    margin-left: -2em;
 }
 #Gamesplayed{
     padding-left: 3em;

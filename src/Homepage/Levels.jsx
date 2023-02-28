@@ -90,7 +90,7 @@ render(){
     return(
         <>
         <div className="levelselect">
-        <h5 style={{color: "white",fontWeight:"bolder",fontSize: 15,marginLeft:'4.2em',paddingBottom:'0.5em'}}>Select Difficulty Level</h5>
+        <h5 style={{color: "white",fontWeight:"bolder",fontSize: 15,marginLeft:'2.5em',paddingBottom:'0.5em'}}>Select Difficulty Level</h5>
         <button id="standard"  onClick ={this.standard}>Standard</button>
         <button id="difficult" onClick ={this.difficult}>Difficult</button>
         </div>

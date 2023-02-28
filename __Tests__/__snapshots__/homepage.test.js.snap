@@ -26,7 +26,7 @@ exports[`Homepage page renders the landing page 1`] = `
             "color": "white",
             "fontSize": 15,
             "fontWeight": "bolder",
-            "marginLeft": "4.2em",
+            "marginLeft": "2.5em",
             "paddingBottom": "0.5em",
           }
         }
