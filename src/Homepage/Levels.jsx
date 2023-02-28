@@ -65,10 +65,9 @@ clickedbuttonGuess(e){
     console.log(`difficult is ${startNewDifficultGame}`);
 
     if(guessedValue == "" || guessedValue < 0 || guessedValue > 100){
-        this.setState({tooHightooLow:'Enter valid number',
-        });
-    };
-    if(this.standard){
+        this.setState({tooHightooLow:""});
+    }
+    else if(this.standard){
         if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }if(guessedValue < startNewStandardGame){
