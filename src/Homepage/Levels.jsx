@@ -105,7 +105,7 @@ render(){
             <input style={{float:'center',fontSize:11}}  value={this.state.input}  id = "Levelsinput" placeholder="Enter Number" type="number" min="0" max="100" onChange = {this.guessNumber} ref={this.inputFocus}/>
         </form>
         <div id ="toohightoolowcard" className="highlowoutputcard">
-        <p style={{color: "red",fontSize: 14, marginLeft:'5em'}}>{this.state.tooHightooLow}</p>
+        <p style={{color: "red",fontSize: 14, marginLeft:'6em'}}>{this.state.tooHightooLow}</p>
         </div>
         &nbsp;
         &nbsp;

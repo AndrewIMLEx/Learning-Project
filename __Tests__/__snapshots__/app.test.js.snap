@@ -106,7 +106,7 @@ exports[`landing page renders the landing page 1`] = `
               {
                 "color": "red",
                 "fontSize": 14,
-                "marginLeft": "5em",
+                "marginLeft": "6em",
               }
             }
           />
