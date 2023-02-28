@@ -5,7 +5,7 @@ class Tally extends React.Component{
         return(
             <>
             <div className="tallycard">
-            <h4 style={{marginLeft:"4em"}}>Game Tally</h4>
+            <h4 style={{marginLeft:"4em",paddingBottom:"2em"}}>Game Tally</h4>
             <form id = "LevelForm">
             <span><label id = "won-label" htmlFor="won">Games Won</label>
             <label id = "Tally"/></span>
@@ -14,7 +14,7 @@ class Tally extends React.Component{
             &nbsp;<label id = "Tally"/></span>
              </form>
              <form id = "Gamesplayed">
-             <label id ="played" htmlFor="gamesplayed" style={{marginLeft:"2em",padding:"-4em",fontSize:"14px"}}>Total Games Played</label>
+             <label id ="played" htmlFor="gamesplayed" style={{padding:"-4em", marginLeft:"4.5em",display: "inline"}}>Total Games Played</label>
             <label id ="plays"/>
             </form>
             </div>

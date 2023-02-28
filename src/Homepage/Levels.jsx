@@ -91,22 +91,22 @@ render(){
     return(
         <>
         <div className="levelselect">
-        <h5 style={{color: "white",fontWeight:"bolder",fontSize: 20,marginLeft:'3em',paddingBottom:'1em'}}>Select Difficulty Level</h5>
+        <h5 style={{color: "white",fontWeight:"bolder",fontSize: 15,marginLeft:'4.2em',paddingBottom:'0.5em'}}>Select Difficulty Level</h5>
         <button id="standard"  onClick ={this.standard}>Standard</button>
         <button id="difficult" onClick ={this.difficult}>Difficult</button>
         </div>
         <div className="levelCard">
-        <h3 style={{color: "black",fontSize: 20 ,marginLeft: '5.1em',paddingTop: '2em'}}>Selected Level</h3>
+        <h3 style={{color: "black",fontSize: 16 ,marginLeft: '5em',paddingTop: '1em'}}>Selected Level</h3>
         &nbsp;
         <div id="levelselectedcard" className="selectedlevelCard">
-        <p style={{color: "red",fontSize: 20,marginLeft:'6.3em'}}>{ this.state.levelSelected }</p>
+        <p style={{color: "red",fontSize: 14,marginLeft:'7.1em'}}>{ this.state.levelSelected }</p>
         </div>
         &nbsp;
         <form id = "LevelForm">
-            <input style={{float:'center',fontSize:14}}  value={this.state.input}  id = "Levelsinput" placeholder="Enter Number" type="number" min="0" max="100" onChange = {this.guessNumber} ref={this.inputFocus}/>
+            <input style={{float:'center',fontSize:11}}  value={this.state.input}  id = "Levelsinput" placeholder="Enter Number" type="number" min="0" max="100" onChange = {this.guessNumber} ref={this.inputFocus}/>
         </form>
         <div id ="toohightoolowcard" className="highlowoutputcard">
-        <p style={{color: "red",fontSize: 20, marginLeft:'4.2em'}}>{this.state.tooHightooLow}</p>
+        <p style={{color: "red",fontSize: 14, marginLeft:'5em'}}>{this.state.tooHightooLow}</p>
         </div>
         &nbsp;
         &nbsp;
