@@ -65,7 +65,7 @@ clickedbuttonGuess(e){
     console.log(`difficult is ${startNewDifficultGame}`);
 
     if(guessedValue == "" || guessedValue < 0 || guessedValue > 100){
-        this.setState({tooHightooLow:""});
+        this.setState({tooHightooLow:"Enter valid number"});
     }
     else if(this.standard){
         if(guessedValue == startNewStandardGame){
@@ -95,10 +95,10 @@ render(){
         <button id="difficult" onClick ={this.difficult}>Difficult</button>
         </div>
         <div className="levelCard">
-        <h3 style={{color: "black",fontSize: 16 ,marginLeft: '5em',paddingTop: '1em'}}>Selected Level</h3>
+        <h3 style={{color: "black",fontSize: 16 ,marginLeft: '5.5em',paddingTop: '1em'}}>Selected Level</h3>
         &nbsp;
         <div id="levelselectedcard" className="selectedlevelCard">
-        <p style={{color: "red",fontSize: 14,marginLeft:'7.1em'}}>{ this.state.levelSelected }</p>
+        <p style={{color: "red",fontSize: 14,marginLeft:'7.5em'}}>{ this.state.levelSelected }</p>
         </div>
         &nbsp;
         <form id = "LevelForm">

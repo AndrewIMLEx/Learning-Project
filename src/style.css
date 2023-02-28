@@ -27,6 +27,7 @@ button{
     height: 50em;
     margin-left : 14em;
     margin-top : 3em; 
+    padding-left:-8em
 }
 #toohightoolowcard{
     outline: 1em solid transparent;
@@ -93,13 +94,13 @@ input{
 }
 .levelCard{
     margin-top: 0.5em;
-    margin-left: 4em;
-    margin-right: 1em;
+    margin-left: 1em;
+    margin-right: 0.5em;
     background-color: #49A19C;
     padding: 1em;
     padding-bottom: 2em;
     padding-left: 1.8em;
-    padding-right: 1.8em;
+    padding-right: 2em;
     resize: none;
 }
 #login{
@@ -153,7 +154,7 @@ label {
     height : 70%;
     background-color: #49A19C;
     margin-top: -33.3em;
-    margin-left: 4.5em;
+    margin-left: 1em;
     padding: 1em 4em 9em 0.8em;
     padding-bottom: 31em;
     padding-top: 2.1em;
