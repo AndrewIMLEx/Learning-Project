@@ -7,7 +7,7 @@ exports[`Tally page renders the rules page 1`] = `
   <h4
     style={
       {
-        "marginLeft": "4em",
+        "marginLeft": "2.8em",
         "paddingBottom": "2em",
       }
     }
@@ -51,7 +51,7 @@ exports[`Tally page renders the rules page 1`] = `
       style={
         {
           "display": "inline",
-          "marginLeft": "4.5em",
+          "marginLeft": "3.4em",
           "padding": "-4em",
         }
       }

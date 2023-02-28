@@ -54,7 +54,7 @@ exports[`Homepage page renders the landing page 1`] = `
           {
             "color": "black",
             "fontSize": 16,
-            "marginLeft": "5em",
+            "marginLeft": "5.5em",
             "paddingTop": "1em",
           }
         }
@@ -71,7 +71,7 @@ exports[`Homepage page renders the landing page 1`] = `
             {
               "color": "red",
               "fontSize": 14,
-              "marginLeft": "7.1em",
+              "marginLeft": "7.5em",
             }
           }
         />
@@ -147,7 +147,7 @@ exports[`Homepage page renders the landing page 1`] = `
       <h4
         style={
           {
-            "marginLeft": "4em",
+            "marginLeft": "2.8em",
             "paddingBottom": "2em",
           }
         }
@@ -191,7 +191,7 @@ exports[`Homepage page renders the landing page 1`] = `
           style={
             {
               "display": "inline",
-              "marginLeft": "4.5em",
+              "marginLeft": "3.4em",
               "padding": "-4em",
             }
           }
