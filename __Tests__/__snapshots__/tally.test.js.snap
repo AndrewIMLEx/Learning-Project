@@ -8,6 +8,7 @@ exports[`Tally page renders the rules page 1`] = `
     style={
       {
         "marginLeft": "4em",
+        "paddingBottom": "2em",
       }
     }
   >
@@ -49,8 +50,8 @@ exports[`Tally page renders the rules page 1`] = `
       id="played"
       style={
         {
-          "fontSize": "14px",
-          "marginLeft": "2em",
+          "display": "inline",
+          "marginLeft": "4.5em",
           "padding": "-4em",
         }
       }

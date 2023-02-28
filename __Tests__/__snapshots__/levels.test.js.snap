@@ -9,10 +9,10 @@ exports[`Levels page renders the levels page 1`] = `
       style={
         {
           "color": "white",
-          "fontSize": 20,
+          "fontSize": 15,
           "fontWeight": "bolder",
-          "marginLeft": "3em",
-          "paddingBottom": "1em",
+          "marginLeft": "4.2em",
+          "paddingBottom": "0.5em",
         }
       }
     >
@@ -38,9 +38,9 @@ exports[`Levels page renders the levels page 1`] = `
       style={
         {
           "color": "black",
-          "fontSize": 20,
-          "marginLeft": "5.1em",
-          "paddingTop": "2em",
+          "fontSize": 16,
+          "marginLeft": "5em",
+          "paddingTop": "1em",
         }
       }
     >
@@ -55,8 +55,8 @@ exports[`Levels page renders the levels page 1`] = `
         style={
           {
             "color": "red",
-            "fontSize": 20,
-            "marginLeft": "6.3em",
+            "fontSize": 14,
+            "marginLeft": "7.1em",
           }
         }
       />
@@ -74,7 +74,7 @@ exports[`Levels page renders the levels page 1`] = `
         style={
           {
             "float": "center",
-            "fontSize": 14,
+            "fontSize": 11,
           }
         }
         type="number"
@@ -89,8 +89,8 @@ exports[`Levels page renders the levels page 1`] = `
         style={
           {
             "color": "red",
-            "fontSize": 20,
-            "marginLeft": "4.2em",
+            "fontSize": 14,
+            "marginLeft": "5em",
           }
         }
       />

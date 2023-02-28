@@ -8,8 +8,9 @@ exports[`Rules page renders the rules page 1`] = `
     style={
       {
         "color": "white",
-        "fontSize": "1em",
+        "fontSize": "1.3em",
         "marginLeft": "3em",
+        "paddingBottom": "1em",
       }
     }
   >
