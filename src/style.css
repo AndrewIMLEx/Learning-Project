@@ -2,31 +2,70 @@
   font-family: tsukimi-rounded;
   src: url(../src/fonts/ttf/TsukimiRounded-Bold.ttf);
 }
-
+@media only screen and (min-height:400px) and (min-width:500px) and (min-width: 768px) and (min-width: 992px) and (min-width: 1200px){
+     *{
+        font-size: 13px;
+        max-width:100%;
+        max-height:100%
+      }
+}
 *{
     font-family: tsukimi-rounded;
+    margin:0;
+    padding:0;
+}
+button{
+    padding :1em;
+    margin-left: 1em;
+    width: 28%;
+    height: 16%;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
 }
 .card {
     background-color : #48A8A2;
-    width : 80em;
-    margin-left : 16em;
-    margin-top : 8em;
-    padding-bottom: 3em;
+    width : 87.8em;
+    height: 50em;
+    margin-left : 14em;
+    margin-top : 3em; 
+    padding-left:-8em
 }
-
+#toohightoolowcard{
+    outline: 1em solid transparent;
+    height: 0;
+    padding-top:-6em;
+    padding-bottom:3em;
+}
+#levelselectedcard{
+    outline: 1em solid transparent;
+    height: 0;
+    padding-bottom:2em;
+    overflow: hidden;
+}
+#difficult{
+    margin-left: 10rem ;
+}
+#guess{
+    margin-left: 7.3rem ;
+}
+#standard{
+    margin-left: -2em;
+}
+#Gamesplayed{
+    padding-left: 3em;
+    margin-top:5em;
+ }
 h1 {
     color:white;
     text-align : center;
-    font-size : 48px;
-    font-weight : bold 
+    font-size : 2.5em;
 }
-
 h2 {
     text-align: center;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
-
 h4 {
     margin-left: 2em;
     color:white;
@@ -34,96 +73,96 @@ h4 {
 h3 {
     margin-left: 3.5em;
 }
-
-p {
-    color: white;
-    margin-left: 8em;
-}
-rulescard{
-    padding-left:4em;
-}
-
-.rules {
-    color : white; 
-    width : 25%;
-    height : 70%;
-    background-color: #49A19C;
-    margin-left: 15px;
-    margin-top: -29em;
-    padding: 1.5em
-}
 .header {
     background-color: #49A19C;
-}
-.levels {
-    margin-left: 24em;
-    margin-top: 2em;
-    margin-right: 31em;
-    padding-top: 2em
-}
-#LevelForm{
-    margin-left: 5em;
-    width: 50%;
-    margin: 2em;
-    display: flex;
-    flex-direction: column;  
-}
-.levelCard{
-    margin-top: 2em;
-    background-color: #49A19C;
-    padding: 10px;
-    padding-bottom: 4em
-}
-button{
-    padding :10px;
-    width: 30%;
-    height: 15%;
-    background-color: black;
-    color: white;
-}
-.playButtons{
-    margin-top: 1em;
-}
-#difficult{
-    margin-left: 8rem ;
-}
-#guess{
-    margin-left: 8rem ;
-    
-}
-#login{
-    margin-left: 8rem;  
-}
-.tally {
-        margin-left: 52em;
-        margin-top: -25em;
-        background-color: #49A19C;
-        margin-right: 0.9em;
-        padding: 1.5em;
-}
-label {
-    display: inline-block;
-    width: 150px;
-    text-align: left;
-    color: white;
-    padding-top: 1em
-  }
-.levelselect{
-    margin-left: 1.5em;
 }
 input{
     width: 80%;
     display: inline-block;
     padding-bottom: -9em
 }
-#Levelsinput{
-    margin-left: 5em;
+#login{
+    margin-bottom:3em;
 }
-#Gamesplayed{
-    padding-left: 5em
+.levels {
+    margin-left: 28em;
+    margin-right: 32em;
+    padding-top: 2em;
+}
+#LevelForm{
+    margin-left: 5em;
+    width: 50%;
+    margin: 4em;
+    display: flex;
+    flex-direction: column;
+    margin-top:0.9em;  
+}
+.levelCard{
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    background-color: #49A19C;
+    padding: 1em;
+    padding-bottom: 2em;
+    padding-left: 1.8em;
+    padding-right: 2em;
+    resize: none;
+}
+#login{
+    margin-left: 6rem;  
+}
+label {
+    display: inline-block;
+    width: 9em;
+    text-align: left;
+    color: white;
+    padding-top: 1em
+  }
+.levelselect{
+    margin-left: 5em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+}
+#login{
+    padding-bottom: 2em;
+}
+#Levelsinput{
+    margin-top: 1em;
+    margin-left: 3em;
+    padding:0.4em
+}
+.p{
+    color: white;
+    margin-left: 8em;
+}
+.playButtons{
+  display: flex;
+  flex-direction: row;
+  padding-left:2em;
+  padding-top:1em
 }
 #played{
-    margin: 10px 20px 30px 10px;
+    margin: 10px 10px 20px 10px;
+}
+#plays{
+    background-color:white;
+    padding: 2em; 
+    margin-top:2em;
+    margin-left: 2.3em;
+}
+.rules-card{
+    padding-left:2em;
+}
+.rules {
+    color : white; 
+    width : 23%;
+    height : 70%;
+    background-color: #49A19C;
+    margin-top: -33.1em;
+    margin-left: 1em;
+    padding: 1em 4em 9em 0.8em;
+    padding-bottom: 31em;
+    padding-top: 2.1em;
 }
 span{
     display:inline-block;
@@ -131,3 +170,20 @@ span{
     flex-direction: row;
     justify-content:space-between;
 }
+.tally {
+    margin-left: 60em;
+    margin-top: -32.5em;
+    background-color: #49A19C;
+    margin-right: 3em;
+    padding: 3.8em 4em;
+    padding-top:2.5em;
+    padding-bottom: 3.9em;
+}
+#Tally{
+    background-color:white;
+}
+#won-label,#played{
+    font-size: 10px;
+    margin-left: -1em;
+}
+

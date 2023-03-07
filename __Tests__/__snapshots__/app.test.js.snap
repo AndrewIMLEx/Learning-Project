@@ -21,18 +21,28 @@ exports[`landing page renders the landing page 1`] = `
       <div
         className="levelselect"
       >
-        <h4>
+        <h5
+          style={
+            {
+              "color": "white",
+              "fontSize": 15,
+              "fontWeight": "bolder",
+              "marginLeft": "2.5em",
+              "paddingBottom": "0.5em",
+            }
+          }
+        >
           Select Difficulty Level
-        </h4>
+        </h5>
         <button
           id="standard"
-          type="submit"
+          onClick={[Function]}
         >
           Standard
         </button>
         <button
           id="difficult"
-          type="submit"
+          onClick={[Function]}
         >
           Difficult
         </button>
@@ -44,39 +54,67 @@ exports[`landing page renders the landing page 1`] = `
           style={
             {
               "color": "black",
+              "fontSize": 16,
+              "marginLeft": "5.5em",
+              "paddingTop": "1em",
             }
           }
         >
           Selected Level
         </h3>
-        <p
-          style={
-            {
-              "color": "red",
-            }
-          }
+         
+        <div
+          className="selectedlevelCard"
+          id="levelselectedcard"
         >
-          STANDARD
-        </p>
+          <p
+            style={
+              {
+                "color": "red",
+                "fontSize": 14,
+                "marginLeft": "7.5em",
+              }
+            }
+          />
+        </div>
+         
         <form
           id="LevelForm"
         >
           <input
             id="Levelsinput"
+            max="100"
+            min="0"
+            onChange={[Function]}
+            placeholder="Enter Number"
+            style={
+              {
+                "float": "center",
+                "fontSize": 11,
+              }
+            }
+            type="number"
+            value={[]}
           />
         </form>
-         
-        <p
-          style={
-            {
-              "color": "red",
-            }
-          }
+        <div
+          className="highlowoutputcard"
+          id="toohightoolowcard"
         >
-          CORRECT GUESS
-        </p>
+          <p
+            style={
+              {
+                "color": "red",
+                "fontSize": 14,
+                "marginLeft": "6em",
+              }
+            }
+          />
+        </div>
+           
         <button
           id="guess"
+          onClick={[Function]}
           type="submit"
         >
           Guess
@@ -86,7 +124,8 @@ exports[`landing page renders the landing page 1`] = `
           className="playButtons"
         >
           <button
-            id="play"
+            id="playAgain"
+            onClick={[Function]}
             type="submit"
           >
             Play Again
@@ -103,61 +142,68 @@ exports[`landing page renders the landing page 1`] = `
     <div
       className="tally"
     >
-      <h4
-        style={
-          {
-            "marginLeft": "4em",
-          }
-        }
+      <div
+        className="tallycard"
       >
-        Game Tally
-      </h4>
-      <form
-        id="LevelForm"
-      >
-        <span>
-          <label
-            for="won"
-            id="won-label"
-          >
-            Games Won
-          </label>
-          <input
-            id="Tally"
-          />
-        </span>
-        <br />
-        <br />
-        <span>
-          <label
-            for="lost"
-            id="won-label"
-          >
-            Games Lost
-          </label>
-          <input
-            id="Tally"
-          />
-        </span>
-      </form>
-      <form
-        id="Gamesplayed"
-      >
-        <label
-          for="gamesplayed"
-          id="played"
+        <h4
           style={
             {
-              "marginLeft": "2em",
+              "marginLeft": "2.8em",
+              "paddingBottom": "2em",
             }
           }
         >
-          Total Games Played
-        </label>
-        <input
-          id="plays"
-        />
-      </form>
+          Game Tally
+        </h4>
+        <form
+          id="LevelForm"
+        >
+          <span>
+            <label
+              htmlFor="won"
+              id="won-label"
+            >
+              Games Won
+            </label>
+            <label
+              id="Tally"
+            />
+          </span>
+            
+          <span>
+            <label
+              htmlFor="lost"
+              id="won-label"
+            >
+              Games Lost
+            </label>
+             
+            <label
+              id="Tally"
+            />
+          </span>
+        </form>
+        <form
+          id="Gamesplayed"
+        >
+          <label
+            htmlFor="gamesplayed"
+            id="played"
+            style={
+              {
+                "display": "inline",
+                "marginLeft": "3.4em",
+                "padding": "-4em",
+              }
+            }
+          >
+            Total Games Played
+          </label>
+          <label
+            id="plays"
+          />
+        </form>
+      </div>
     </div>
     <div
       className="rules-card"
@@ -165,7 +211,16 @@ exports[`landing page renders the landing page 1`] = `
       <div
         className="rules"
       >
-        <h4>
+        <h4
+          style={
+            {
+              "color": "white",
+              "fontSize": "1.3em",
+              "marginLeft": "3em",
+              "paddingBottom": "1em",
+            }
+          }
+        >
           How to Play
         </h4>
         <ol>

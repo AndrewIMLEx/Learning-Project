@@ -1,61 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tally page renders the rules page 1`] = `
-[
+<div
+  className="tallycard"
+>
   <h4
     style={
       {
-        "marginLeft": "4em",
+        "marginLeft": "2.8em",
+        "paddingBottom": "2em",
       }
     }
   >
     Game Tally
-  </h4>,
+  </h4>
   <form
     id="LevelForm"
   >
     <span>
       <label
-        for="won"
+        htmlFor="won"
         id="won-label"
       >
         Games Won
       </label>
-      <input
+      <label
         id="Tally"
       />
     </span>
-    <br />
-    <br />
+      
     <span>
       <label
-        for="lost"
+        htmlFor="lost"
         id="won-label"
       >
         Games Lost
       </label>
-      <input
+       
+      <label
         id="Tally"
       />
     </span>
-  </form>,
+  </form>
   <form
     id="Gamesplayed"
   >
     <label
-      for="gamesplayed"
+      htmlFor="gamesplayed"
       id="played"
       style={
         {
-          "marginLeft": "2em",
+          "display": "inline",
+          "marginLeft": "3.4em",
+          "padding": "-4em",
         }
       }
     >
       Total Games Played
     </label>
-    <input
+    <label
       id="plays"
     />
-  </form>,
-]
+  </form>
+</div>
 `;
