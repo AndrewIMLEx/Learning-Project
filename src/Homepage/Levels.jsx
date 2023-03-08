@@ -47,7 +47,6 @@ class Levels extends React.Component{
           }, 1000);
     }
     componentDidMount(){
-      
     }
     guessNumber(e){
         e.preventDefault();
