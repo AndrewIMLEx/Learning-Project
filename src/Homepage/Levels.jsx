@@ -47,6 +47,9 @@ class Levels extends React.Component{
           }, 1000);
     }
     componentDidMount(){
+        //setInterval(() => {
+            //this.Initial()
+       // },5000);
     }
     guessNumber(e){
         e.preventDefault();
