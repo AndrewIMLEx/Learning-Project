@@ -74,10 +74,6 @@ clickedbuttonGuess(e){
             input:[]
         })
         )}
-    else if(counts == 3){
-        this.setState({tooHightooLow:`Game Over`}   
-        )
-    }
     if(guessedValue == "" || guessedValue < 0 || guessedValue > 100){
         this.setState({tooHightooLow:"Enter valid number"});
     }
