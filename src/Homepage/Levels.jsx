@@ -75,9 +75,8 @@ clickedbuttonGuess(e){
     if(guessedValue == "" || guessedValue < 0 || guessedValue > 100){
         this.setState({tooHightooLow:"Enter valid number"});
     }
-    if(counts === 3){
-        this.setState({tooHightooLow: "Game Over!Try Again",
-                        levelSelected:""});
+    if(counts > 3){
+        this.setState({tooHightooLow: "Game Over!!!!!",input:[],levelSelected:""});
     }
     else if(this.standard){
         if(guessedValue == ""){
@@ -93,8 +92,7 @@ clickedbuttonGuess(e){
     else if(this.difficult){
         if(guessedValue == ""){
             this.setState({tooHightooLow:"Enter valid number"});
-        }
-        else if(guessedValue  == startNewDifficultGame){
+        }else if(guessedValue  == startNewDifficultGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
         }else if(guessedValue  < startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!Too Low'});
