@@ -9,7 +9,6 @@ class Levels extends React.Component{
             tooHightooLow: "",
             standardNum: [],
             difficultNum: [],
-            gameKey: true,
             gameCount: 1,   
         };
         this.standard = this.standard.bind(this);
@@ -22,8 +21,8 @@ class Levels extends React.Component{
         this.setState({
             levelSelected: "",             
             input: [],
-            tooHightooLow:"" ,
-            guessNumber: "",  
+            tooHightooLow:"" , 
+            gameCount:this.state.gameCount + 1
     })
     }
     standard(e){
@@ -60,22 +59,25 @@ clickedbuttonGuess(e){
     let startNewStandardGame = this.state.standardNum;
     let startNewDifficultGame = this.state.difficultNum;
     let guessedValue = this.state.input; 
-    let counts = this.state.gameCount;
+    let counts = this.state.gameCount
 
     console.log(`selected level is ${this.state.levelSelected}`);
     console.log(`Input number is ${guessedValue}`);
     console.log(`standard is ${startNewStandardGame}`);
     console.log(`difficult is ${startNewDifficultGame}`);
-    
+
     if(guessedValue !== ""){
         this.setState((prevState) => ({
             counts: prevState.gameCount + 1,
             levelSelected: "",
-            input:[]
-        })
-        )}
+            input:[],
+        }))}
     if(guessedValue == "" || guessedValue < 0 || guessedValue > 100){
         this.setState({tooHightooLow:"Enter valid number"});
+    }
+    if(counts === 3){
+        this.setState({tooHightooLow: "Game Over!Try Again",
+                        levelSelected:""});
     }
     else if(this.standard){
         if(guessedValue == startNewStandardGame){
@@ -94,7 +96,7 @@ clickedbuttonGuess(e){
         }if(guessedValue  > startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!too High'});
         }
-    };
+    }
 }
 render(){
     return(
