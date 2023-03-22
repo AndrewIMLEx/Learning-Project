@@ -80,20 +80,25 @@ clickedbuttonGuess(e){
                         levelSelected:""});
     }
     else if(this.standard){
-        if(guessedValue == startNewStandardGame){
+        if(guessedValue == ""){
+            this.setState({tooHightooLow:"Enter valid number"});}
+        else if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
-        }if(guessedValue < startNewStandardGame){
+        }else if(guessedValue < startNewStandardGame){
                 this.setState({tooHightooLow:'Wrong!Too Low'});
-        }if(guessedValue  > startNewStandardGame){
+        }else if(guessedValue  > startNewStandardGame){
                 this.setState({tooHightooLow:'Wrong!Too high'});
         }
     }
     else if(this.difficult){
-        if(guessedValue  == startNewDifficultGame){
+        if(guessedValue == ""){
+            this.setState({tooHightooLow:"Enter valid number"});
+        }
+        else if(guessedValue  == startNewDifficultGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
-        }if(guessedValue  < startNewDifficultGame){
+        }else if(guessedValue  < startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!Too Low'});
-        }if(guessedValue  > startNewDifficultGame){
+        }else if(guessedValue  > startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!too High'});
         }
     }
