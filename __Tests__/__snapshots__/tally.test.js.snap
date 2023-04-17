@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tally page renders the rules page 1`] = `
+exports[`Tally page renders the tally page 1`] = `
 <div
   className="tallycard"
 >
