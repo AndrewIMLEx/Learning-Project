@@ -102,8 +102,8 @@ input{
     margin-left: 1em;
     margin-right: 0.5em;
     background-color: #49A19C;
-    padding: 1em;
-    padding-bottom: 2em;
+    padding: 1.5em;
+    padding-bottom: 0.9em;
     padding-left: 1.8em;
     padding-right: 2em;
     resize: none;
@@ -121,7 +121,7 @@ label {
 .levelselect{
     margin-left: 5em;
     margin-right: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 1.3em;
 }
 #login{
     padding-bottom: 2em;
@@ -181,6 +181,10 @@ span{
 }
 #Tally{
     background-color:white;
+}
+#toohightoolowcard{
+    padding-top: -9em;
+    padding-bottom: 4em;
 }
 #won-label,#played{
     font-size: 10px;

@@ -9,6 +9,7 @@ class Levels extends React.Component{
             tooHightooLow: "",
             standardNum: [],
             difficultNum: [],
+            gameCount: 1,   
         };
         this.standard = this.standard.bind(this);
         this.difficult = this.difficult.bind(this);
@@ -20,8 +21,8 @@ class Levels extends React.Component{
         this.setState({
             levelSelected: "",             
             input: [],
-            tooHightooLow:"" ,
-            guessNumber: "",     
+            tooHightooLow:"" , 
+            gameCount:this.state.gameCount + 1
     })
     }
     standard(e){
@@ -45,9 +46,9 @@ class Levels extends React.Component{
                 difficultNum: Math.floor (Math.random() *100),
         });
           }, 1000);
+          
     }
     componentDidMount(){
-      
     }
     guessNumber(e){
         e.preventDefault();
@@ -58,33 +59,55 @@ clickedbuttonGuess(e){
     let startNewStandardGame = this.state.standardNum;
     let startNewDifficultGame = this.state.difficultNum;
     let guessedValue = this.state.input; 
+    let counts = this.state.gameCount
 
     console.log(`selected level is ${this.state.levelSelected}`);
     console.log(`Input number is ${guessedValue}`);
     console.log(`standard is ${startNewStandardGame}`);
     console.log(`difficult is ${startNewDifficultGame}`);
 
+    if(guessedValue !== ""){
+        this.setState((prevState) => ({
+            counts: prevState.gameCount + 1,
+            levelSelected: "",
+            input:[],
+        }))}
     if(guessedValue == "" || guessedValue < 0 || guessedValue > 100){
         this.setState({tooHightooLow:"Enter valid number"});
     }
+    if(counts == 3){
+        if(guessedValue == startNewStandardGame || guessedValue == startNewDifficultGame){
+            this.setState({tooHightooLow:"Game Over! Correct"});
+        }if(guessedValue > startNewDifficultGame || guessedValue > startNewDifficultGame){
+            this.setState({tooHightooLow:"Game Over! too High"});
+        }if(guessedValue < startNewStandardGame || guessedValue < startNewDifficultGame){
+            this.setState({tooHightooLow:"Game Over! too Low"});
+        }
+    }else if(counts > 3){
+        this.setState({tooHightooLow:"Game Over!!!!"});
+    }
     else if(this.standard){
-        if(guessedValue == startNewStandardGame){
+        if(guessedValue == ""){
+            this.setState({tooHightooLow:"Enter valid number"});}
+        else if(guessedValue == startNewStandardGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
-        }if(guessedValue < startNewStandardGame){
+        }else if(guessedValue < startNewStandardGame){
                 this.setState({tooHightooLow:'Wrong!Too Low'});
-        }if(guessedValue  > startNewStandardGame){
+        }else if(guessedValue  > startNewStandardGame){
                 this.setState({tooHightooLow:'Wrong!Too high'});
         }
     }
     else if(this.difficult){
-        if(guessedValue  == startNewDifficultGame){
+        if(guessedValue == ""){
+            this.setState({tooHightooLow:"Enter valid number"});
+        }else if(guessedValue  == startNewDifficultGame){
             this.setState({tooHightooLow:'Good Job!Correct'});
-        }if(guessedValue  < startNewDifficultGame){
+        }else if(guessedValue  < startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!Too Low'});
-        }if(guessedValue  > startNewDifficultGame){
+        }else if(guessedValue  > startNewDifficultGame){
             this.setState({tooHightooLow:'Wrong!too High'});
         }
-    };
+    }
 }
 render(){
     return(
